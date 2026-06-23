@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the article below."
+title: "pak_quality_estimation: support-aware daily PM2.5 estimation for Pakistan"
+type: software
+authors:
+  - given-names: Rehan
+    family-names: Ahmad
+    affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
+    email: rehan@pakairquality.com
+  - given-names: Mahad
+    family-names: Naveed
+    affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
+    email: mahad@pakairquality.com
+  - given-names: Abid
+    family-names: Omar
+    affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
+    email: abidomar@pakairquality.com
+license: MIT
+repository-code: "https://github.com/PakAirQuality/pak_quality_estimation"
+# doi: TBD  # Zenodo DOI, minted at submission
+keywords:
+  - PM2.5
+  - air quality estimation
+  - satellite remote sensing
+  - temporal dropout
+  - support-aware modelling
+  - LightGBM
+  - Pakistan
+preferred-citation:
+  type: article
+  title: "Recent monitor history improves daily PM2.5 estimation but weakens national transfer under sparse monitoring: a support-aware model for Pakistan"
+  authors:
+    - given-names: Rehan
+      family-names: Ahmad
+      affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
+    - given-names: Mahad
+      family-names: Naveed
+      affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
+    - given-names: Abid
+      family-names: Omar
+      affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
+  journal: "Atmospheric Chemistry and Physics"
+  year: 2026
+  status: submitted

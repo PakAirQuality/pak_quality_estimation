@@ -1,0 +1,2124 @@
+{
+  "model_type": "registry_authoritative_lgbm_daily_lake",
+  "training_mode": "paper_benchmark",
+  "use_latlon": false,
+  "strict_registry": true,
+  "final_train_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "dev_year": 2024,
+  "test_year": 2025,
+  "features_used_full": [
+    "t2m",
+    "d2m",
+    "u10",
+    "v10",
+    "sp",
+    "u100",
+    "v100",
+    "blh",
+    "msl",
+    "tcc",
+    "RH",
+    "q",
+    "VPD",
+    "dT",
+    "theta",
+    "WS10",
+    "WD10",
+    "WS100",
+    "WD100",
+    "dWS",
+    "dWD",
+    "VC",
+    "VCi",
+    "BLH_tend",
+    "CLR",
+    "MSLP_tend",
+    "SP_tend",
+    "Stagnant",
+    "HighRH",
+    "WS10_daily_mean",
+    "WS10_daily_max",
+    "WS10_daily_min",
+    "blh_daily_mean",
+    "blh_daily_max",
+    "blh_daily_min",
+    "RH_daily_mean",
+    "RH_daily_max",
+    "RH_daily_min",
+    "t2m_daily_mean",
+    "t2m_daily_max",
+    "t2m_daily_min",
+    "VPD_daily_mean",
+    "VPD_daily_max",
+    "VPD_daily_min",
+    "VC_daily_mean",
+    "VC_daily_max",
+    "VC_daily_min",
+    "doy_sin",
+    "doy_cos",
+    "doy_sin_2",
+    "doy_cos_2",
+    "doy_sin_3",
+    "doy_cos_3",
+    "heating_season_flag",
+    "burning_season_flag",
+    "WS10_lag1d",
+    "WS10_lag3d",
+    "WS10_rollmean_3d",
+    "WS10_rollstd_3d",
+    "WS10_rollmin_7d",
+    "WS10_rollmax_7d",
+    "calm3_count",
+    "calm3_flag",
+    "calm7_count",
+    "calm7_flag",
+    "blh_lag1d",
+    "blh_lag3d",
+    "blh_rollmean_3d",
+    "blh_rollmin_7d",
+    "blh_rollmean_7d",
+    "blh_anom_7d",
+    "blh_rollmean_14d",
+    "blh_anom_14d",
+    "RH_rollmean_3d",
+    "RH_rollmax_7d",
+    "RH_rollmean_7d",
+    "RH_anom_7d",
+    "RH_rollstd_7d",
+    "VPD_rollmean_3d",
+    "VPD_rollmean_7d",
+    "VC_rollmean_3d",
+    "VC_rollmin_7d",
+    "VC_rollmean_7d",
+    "VC_anom_7d",
+    "VC_rollmean_14d",
+    "VC_anom_14d",
+    "stagnant3_count",
+    "stagnant3_flag",
+    "stagnant7_count",
+    "stagnant7_flag",
+    "WD10_sin",
+    "WD10_cos",
+    "WD10_sin_rm_7d",
+    "WD10_cos_rm_7d",
+    "WD10_var_7d",
+    "WD10_sin_rm_14d",
+    "WD10_cos_rm_14d",
+    "WD10_var_14d",
+    "dWS_abs",
+    "dWS_rollmean_3d",
+    "dWS_rollstd_3d",
+    "dWD_abs",
+    "dWD_rollstd_3d",
+    "BLH_tend_rollmean_3d",
+    "BLH_tend_rollstd_3d",
+    "BLH_tend_rollmean_7d",
+    "BLH_tend_rollstd_7d",
+    "MSLP_tend_rollmean_3d",
+    "MSLP_tend_rollstd_3d",
+    "MSLP_tend_rollmean_7d",
+    "MSLP_tend_rollstd_7d",
+    "SP_tend_rollmean_3d",
+    "SP_tend_rollstd_3d",
+    "SP_tend_rollmean_7d",
+    "SP_tend_rollstd_7d",
+    "dT_rollmean_3d",
+    "dT_rollstd_3d",
+    "dT_rollmean_7d",
+    "dT_rollstd_7d",
+    "optical_depth_047",
+    "optical_depth_055",
+    "aod_uncertainty",
+    "qa_cloudmask",
+    "qa_adjacency",
+    "qa_aod",
+    "no2_median",
+    "no2_mean",
+    "no2_std",
+    "no2_min",
+    "no2_max",
+    "no2_p10",
+    "no2_p25",
+    "no2_p75",
+    "no2_p90",
+    "no2_iqr",
+    "no2_mad",
+    "no2_range",
+    "no2_cv",
+    "no2_skew",
+    "no2_kurt",
+    "no2_delta_median_r1_r05",
+    "no2_delta_median_r2_r1",
+    "no2_delta_std_r2_r05",
+    "so2_median",
+    "so2_mean",
+    "so2_std",
+    "so2_min",
+    "so2_max",
+    "so2_p10",
+    "so2_p25",
+    "so2_p75",
+    "so2_p90",
+    "so2_iqr",
+    "so2_mad",
+    "so2_range",
+    "so2_cv",
+    "so2_skew",
+    "so2_kurt",
+    "so2_delta_median_r1_r05",
+    "so2_delta_median_r2_r1",
+    "so2_delta_std_r2_r05",
+    "co_median",
+    "co_mean",
+    "co_std",
+    "co_min",
+    "co_max",
+    "co_p10",
+    "co_p25",
+    "co_p75",
+    "co_p90",
+    "co_iqr",
+    "co_mad",
+    "co_range",
+    "co_cv",
+    "co_skew",
+    "co_kurt",
+    "co_delta_median_r1_r05",
+    "co_delta_median_r2_r1",
+    "co_delta_std_r2_r05",
+    "hcho_median",
+    "hcho_mean",
+    "hcho_std",
+    "hcho_min",
+    "hcho_max",
+    "hcho_p10",
+    "hcho_p25",
+    "hcho_p75",
+    "hcho_p90",
+    "hcho_iqr",
+    "hcho_mad",
+    "hcho_range",
+    "hcho_cv",
+    "hcho_skew",
+    "hcho_kurt",
+    "hcho_delta_median_r1_r05",
+    "hcho_delta_median_r2_r1",
+    "hcho_delta_std_r2_r05",
+    "aai_median",
+    "aai_mean",
+    "aai_std",
+    "aai_min",
+    "aai_max",
+    "aai_p10",
+    "aai_p25",
+    "aai_p75",
+    "aai_p90",
+    "aai_iqr",
+    "aai_mad",
+    "aai_range",
+    "aai_cv",
+    "aai_skew",
+    "aai_kurt",
+    "aai_delta_median_r1_r05",
+    "aai_delta_median_r2_r1",
+    "aai_delta_std_r2_r05",
+    "alh_median",
+    "alh_mean",
+    "alh_std",
+    "alh_min",
+    "alh_max",
+    "alh_p10",
+    "alh_p25",
+    "alh_p75",
+    "alh_p90",
+    "alh_iqr",
+    "alh_mad",
+    "alh_range",
+    "alh_cv",
+    "alh_skew",
+    "alh_kurt",
+    "alh_delta_median_r1_r05",
+    "alh_delta_median_r2_r1",
+    "alh_delta_std_r2_r05",
+    "ch4_median",
+    "ch4_mean",
+    "ch4_std",
+    "ch4_min",
+    "ch4_max",
+    "ch4_p10",
+    "ch4_p25",
+    "ch4_p75",
+    "ch4_p90",
+    "ch4_iqr",
+    "ch4_mad",
+    "ch4_range",
+    "ch4_cv",
+    "ch4_skew",
+    "ch4_kurt",
+    "ch4_delta_median_r1_r05",
+    "ch4_delta_median_r2_r1",
+    "ch4_delta_std_r2_r05",
+    "cloud_median",
+    "cloud_mean",
+    "cloud_std",
+    "cloud_min",
+    "cloud_max",
+    "cloud_p10",
+    "cloud_p25",
+    "cloud_p75",
+    "cloud_p90",
+    "cloud_iqr",
+    "cloud_mad",
+    "cloud_range",
+    "cloud_cv",
+    "cloud_skew",
+    "cloud_kurt",
+    "cloud_delta_median_r1_r05",
+    "cloud_delta_median_r2_r1",
+    "cloud_delta_std_r2_r05",
+    "o3_median",
+    "o3_mean",
+    "o3_std",
+    "o3_min",
+    "o3_max",
+    "o3_p10",
+    "o3_p25",
+    "o3_p75",
+    "o3_p90",
+    "o3_iqr",
+    "o3_mad",
+    "o3_range",
+    "o3_cv",
+    "o3_skew",
+    "o3_kurt",
+    "o3_delta_median_r1_r05",
+    "o3_delta_median_r2_r1",
+    "o3_delta_std_r2_r05",
+    "nh3_median",
+    "nh3_mean",
+    "nh3_std",
+    "nh3_min",
+    "nh3_max",
+    "nh3_p10",
+    "nh3_p25",
+    "nh3_p75",
+    "nh3_p90",
+    "nh3_iqr",
+    "nh3_mad",
+    "nh3_range",
+    "nh3_cv",
+    "nh3_skew",
+    "nh3_kurt",
+    "nh3_delta_median_r1_r05",
+    "nh3_delta_median_r2_r1",
+    "nh3_delta_std_r2_r05"
+  ],
+  "n_features_full": 305,
+  "train_samples": 39595,
+  "dev_samples": 20667,
+  "test_samples": 48390,
+  "best_params_from_tuning": null,
+  "tuning_report_path": null,
+  "cv": {
+    "folds": {
+      "2021": {
+        "train_years": [
+          2020
+        ],
+        "val_year": 2021,
+        "val_metrics": {
+          "rmse": 46.25999088984756,
+          "mae": 28.805941787359945,
+          "r2": 0.6489428890669657,
+          "bias": -6.48322341670252,
+          "f1_150": 0.6921515561569689,
+          "extreme_rmse": 93.90707133702402,
+          "n_extreme_true": 1630,
+          "n_extreme_pred": 1326,
+          "n_predictions": 9950
+        }
+      },
+      "2022": {
+        "train_years": [
+          2020,
+          2021
+        ],
+        "val_year": 2022,
+        "val_metrics": {
+          "rmse": 48.08659217770833,
+          "mae": 31.291989664539464,
+          "r2": 0.6241504549883263,
+          "bias": -13.258626303030967,
+          "f1_150": 0.6898661567877629,
+          "extreme_rmse": 93.59349654331638,
+          "n_extreme_true": 1381,
+          "n_extreme_pred": 1234,
+          "n_predictions": 8444
+        }
+      },
+      "2023": {
+        "train_years": [
+          2020,
+          2021,
+          2022
+        ],
+        "val_year": 2023,
+        "val_metrics": {
+          "rmse": 40.638660681107034,
+          "mae": 26.097930474369203,
+          "r2": 0.6602465736991701,
+          "bias": -5.8420400809208965,
+          "f1_150": 0.7069418386491557,
+          "extreme_rmse": 83.05272425337304,
+          "n_extreme_true": 1413,
+          "n_extreme_pred": 1252,
+          "n_predictions": 9957
+        }
+      },
+      "2024": {
+        "train_years": [
+          2020,
+          2021,
+          2022,
+          2023
+        ],
+        "val_year": 2024,
+        "val_metrics": {
+          "rmse": 42.63701960615205,
+          "mae": 25.126959649775767,
+          "r2": 0.6892308646885856,
+          "bias": -5.91213595450156,
+          "f1_150": 0.6781011781011781,
+          "extreme_rmse": 91.53379213059277,
+          "n_extreme_true": 3030,
+          "n_extreme_pred": 2742,
+          "n_predictions": 20667
+        }
+      }
+    },
+    "summary_val_metrics": {
+      "rmse": {
+        "mean": 44.405565838703744,
+        "std": 2.9285737749695135
+      },
+      "mae": {
+        "mean": 27.830705394011098,
+        "std": 2.410618426666163
+      },
+      "r2": {
+        "mean": 0.6556426956107619,
+        "std": 0.023377389838255436
+      },
+      "bias": {
+        "mean": -7.874006438788985,
+        "std": 3.1187429989315882
+      },
+      "f1_150": {
+        "mean": 0.6917651824237664,
+        "std": 0.010256601427120825
+      },
+      "extreme_rmse": {
+        "mean": 90.52177106607654,
+        "std": 4.407567420283614
+      },
+      "n_extreme_true": {
+        "mean": 1863.5,
+        "std": 680.2574880146487
+      },
+      "n_extreme_pred": {
+        "mean": 1638.5,
+        "std": 638.038204185298
+      },
+      "n_predictions": {
+        "mean": 12254.5,
+        "std": 4895.898615167597
+      }
+    }
+  },
+  "final_model": {
+    "dev_overall": {
+      "rmse": 42.63701960615205,
+      "mae": 25.126959649775767,
+      "r2": 0.6892308646885856,
+      "bias": -5.91213595450156,
+      "f1_150": 0.6781011781011781,
+      "extreme_rmse": 91.53379213059277,
+      "n_extreme_true": 3030,
+      "n_extreme_pred": 2742,
+      "n_predictions": 20667
+    },
+    "dev_monthly": {
+      "1": {
+        "rmse": 68.96173500105856,
+        "mae": 53.88725432058568,
+        "r2": 0.15463720025884276,
+        "bias": -24.31186836260432,
+        "f1_150": 0.6405300938707896,
+        "extreme_rmse": 80.35441380557273,
+        "n_extreme_true": 977,
+        "n_extreme_pred": 834,
+        "n_predictions": 1701
+      },
+      "2": {
+        "rmse": 39.14798502226305,
+        "mae": 28.49166467229998,
+        "r2": 0.4878570281250595,
+        "bias": -11.806125033542836,
+        "f1_150": 0.5131195335276968,
+        "extreme_rmse": 76.5910488741859,
+        "n_extreme_true": 232,
+        "n_extreme_pred": 111,
+        "n_predictions": 1663
+      },
+      "3": {
+        "rmse": 28.43533728665229,
+        "mae": 20.85580489096779,
+        "r2": 0.3436329669648277,
+        "bias": -12.199828879854744,
+        "f1_150": 0.0,
+        "extreme_rmse": 82.43189779439392,
+        "n_extreme_true": 26,
+        "n_extreme_pred": 0,
+        "n_predictions": 1788
+      },
+      "4": {
+        "rmse": 16.760159538867104,
+        "mae": 11.938598498650943,
+        "r2": 0.3518647285026797,
+        "bias": -3.236357493589696,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 1712
+      },
+      "5": {
+        "rmse": 17.43098064163282,
+        "mae": 12.645871980786502,
+        "r2": 0.4639927046798188,
+        "bias": -2.773440912119795,
+        "f1_150": 0.0,
+        "extreme_rmse": 74.7102596110964,
+        "n_extreme_true": 1,
+        "n_extreme_pred": 0,
+        "n_predictions": 1620
+      },
+      "6": {
+        "rmse": 15.42195023165643,
+        "mae": 11.762156054557138,
+        "r2": 0.08897058517358114,
+        "bias": 2.62955761600576,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 1429
+      },
+      "7": {
+        "rmse": 18.02150087512822,
+        "mae": 13.5772378033461,
+        "r2": 0.30033893145887847,
+        "bias": -1.2084399068600973,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 1783
+      },
+      "8": {
+        "rmse": 13.172139353034138,
+        "mae": 10.65232987983504,
+        "r2": 0.27022191656777583,
+        "bias": 3.9990493664740874,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 1832
+      },
+      "9": {
+        "rmse": 18.626613204677074,
+        "mae": 13.033951854770551,
+        "r2": 0.3783482278389354,
+        "bias": -0.783787377321903,
+        "f1_150": 0.0,
+        "extreme_rmse": 183.64401096057912,
+        "n_extreme_true": 2,
+        "n_extreme_pred": 0,
+        "n_predictions": 1646
+      },
+      "10": {
+        "rmse": 36.35082770029731,
+        "mae": 24.956825117468586,
+        "r2": 0.6650858500437253,
+        "bias": -4.789206814126664,
+        "f1_150": 0.6243386243386243,
+        "extreme_rmse": 74.16732288468717,
+        "n_extreme_true": 228,
+        "n_extreme_pred": 150,
+        "n_predictions": 1614
+      },
+      "11": {
+        "rmse": 92.02494358386697,
+        "mae": 54.43148360767457,
+        "r2": 0.5148680268334892,
+        "bias": -20.13864724593651,
+        "f1_150": 0.7940176750509857,
+        "extreme_rmse": 130.42707074598988,
+        "n_extreme_true": 757,
+        "n_extreme_pred": 714,
+        "n_predictions": 1708
+      },
+      "12": {
+        "rmse": 53.04599795382497,
+        "mae": 39.983908756015126,
+        "r2": 0.44465486488917505,
+        "bias": 2.3658811543705767,
+        "f1_150": 0.674712643678161,
+        "extreme_rmse": 64.29486835277312,
+        "n_extreme_true": 807,
+        "n_extreme_pred": 933,
+        "n_predictions": 2171
+      }
+    },
+    "dev_seasonal": {
+      "winter": {
+        "rmse": 55.006060778006585,
+        "mae": 40.80378028160071,
+        "r2": 0.46340146659012893,
+        "bias": -10.090649689147815,
+        "f1_150": 0.6445814072932717,
+        "extreme_rmse": 73.88483560674128,
+        "n_extreme_true": 2016,
+        "n_extreme_pred": 1878,
+        "n_predictions": 5535
+      },
+      "pre_monsoon": {
+        "rmse": 21.735472326357243,
+        "mae": 15.2764399186748,
+        "r2": 0.46265067639006274,
+        "bias": -6.220100067156233,
+        "f1_150": 0.0,
+        "extreme_rmse": 82.1588535872401,
+        "n_extreme_true": 27,
+        "n_extreme_pred": 0,
+        "n_predictions": 5120
+      },
+      "monsoon": {
+        "rmse": 16.4388792426407,
+        "mae": 12.25490121048406,
+        "r2": 0.352080460887342,
+        "bias": 1.1418735270028926,
+        "f1_150": 0.0,
+        "extreme_rmse": 183.64401096057912,
+        "n_extreme_true": 2,
+        "n_extreme_pred": 0,
+        "n_predictions": 6690
+      },
+      "post_monsoon": {
+        "rmse": 70.68313724519494,
+        "mae": 40.11116488305312,
+        "r2": 0.5955710331693832,
+        "bias": -12.681092502727273,
+        "f1_150": 0.7593293672255274,
+        "extreme_rmse": 119.77845310050748,
+        "n_extreme_true": 985,
+        "n_extreme_pred": 864,
+        "n_predictions": 3322
+      }
+    },
+    "dev_skill": {
+      "model_metrics": {
+        "rmse": 42.63701960615205,
+        "mae": 25.126959649775767,
+        "r2": 0.6892308646885856,
+        "bias": -5.91213595450156,
+        "f1_150": 0.6781011781011781,
+        "extreme_rmse": 91.53379213059277,
+        "n_extreme_true": 3030,
+        "n_extreme_pred": 2742,
+        "n_predictions": 20667
+      },
+      "clim_metrics": {
+        "rmse": 59.20954546468426,
+        "mae": 35.70754801769942,
+        "r2": 0.40069533918660794,
+        "bias": -5.5098561601771285,
+        "f1_150": 0.3106414352420742,
+        "extreme_rmse": 128.18841289320773,
+        "n_extreme_true": 3030,
+        "n_extreme_pred": 1039,
+        "n_predictions": 20667
+      },
+      "persist_metrics": {
+        "rmse": 31.363333541506385,
+        "mae": 18.423327594757442,
+        "r2": 0.8238855925172871,
+        "bias": 0.08016773242899088,
+        "f1_150": 0.8104913188031031,
+        "extreme_rmse": 62.26547482294496,
+        "n_extreme_true": 2704,
+        "n_extreme_pred": 2710,
+        "n_predictions": 18727
+      },
+      "skill_vs_climatology": 0.2963123752624822,
+      "skill_vs_persistence": -0.36386651762767963
+    },
+    "test_overall": {
+      "rmse": 42.76700836709089,
+      "mae": 26.37721635381414,
+      "r2": 0.6789395717822245,
+      "bias": 1.5659990230768015,
+      "f1_150": 0.7355913517486372,
+      "extreme_rmse": 83.21097788841037,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 8343,
+      "n_predictions": 48390
+    },
+    "test_monthly": {
+      "1": {
+        "rmse": 53.948527492429804,
+        "mae": 38.77018361379247,
+        "r2": 0.3375727299813802,
+        "bias": 0.5991406328241502,
+        "f1_150": 0.5661492978566149,
+        "extreme_rmse": 77.13537362918404,
+        "n_extreme_true": 660,
+        "n_extreme_pred": 693,
+        "n_predictions": 2382
+      },
+      "2": {
+        "rmse": 29.018490047855902,
+        "mae": 21.40525966777087,
+        "r2": 0.5199288926469618,
+        "bias": -0.2877243647352914,
+        "f1_150": 0.3188405797101449,
+        "extreme_rmse": 63.35460895562701,
+        "n_extreme_true": 149,
+        "n_extreme_pred": 58,
+        "n_predictions": 2200
+      },
+      "3": {
+        "rmse": 19.309010696836292,
+        "mae": 14.726191384202114,
+        "r2": 0.5100686448682764,
+        "bias": 3.183033681966741,
+        "f1_150": 0.0,
+        "extreme_rmse": 36.59311757432997,
+        "n_extreme_true": 2,
+        "n_extreme_pred": 0,
+        "n_predictions": 2343
+      },
+      "4": {
+        "rmse": 20.76436418992155,
+        "mae": 15.349346321300946,
+        "r2": 0.3149807941538315,
+        "bias": -1.3201209469689774,
+        "f1_150": 0.0,
+        "extreme_rmse": 100.17022889360375,
+        "n_extreme_true": 3,
+        "n_extreme_pred": 0,
+        "n_predictions": 2237
+      },
+      "5": {
+        "rmse": 17.44631445863112,
+        "mae": 13.363727368476091,
+        "r2": 0.4068058479966913,
+        "bias": 1.2154390620483124,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 2316
+      },
+      "6": {
+        "rmse": 15.278952943270868,
+        "mae": 12.039770818795551,
+        "r2": 0.14963939046760732,
+        "bias": 1.7231245358890945,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 2358
+      },
+      "7": {
+        "rmse": 14.893770652604703,
+        "mae": 11.734099439426533,
+        "r2": 0.28893223112385136,
+        "bias": 2.688918160802142,
+        "f1_150": 0.0,
+        "extreme_rmse": 144.4400079493743,
+        "n_extreme_true": 1,
+        "n_extreme_pred": 0,
+        "n_predictions": 4412
+      },
+      "8": {
+        "rmse": 15.597151582212085,
+        "mae": 12.570025683169533,
+        "r2": -0.0343164360100956,
+        "bias": 7.258379759089111,
+        "f1_150": 0.0,
+        "extreme_rmse": NaN,
+        "n_extreme_true": 0,
+        "n_extreme_pred": 0,
+        "n_predictions": 5491
+      },
+      "9": {
+        "rmse": 18.395170855916067,
+        "mae": 14.538977107656951,
+        "r2": 0.3740744059274801,
+        "bias": 7.470934369621471,
+        "f1_150": 0.0,
+        "extreme_rmse": 108.24035707491599,
+        "n_extreme_true": 6,
+        "n_extreme_pred": 0,
+        "n_predictions": 5873
+      },
+      "10": {
+        "rmse": 37.177911945690944,
+        "mae": 25.570599743748804,
+        "r2": 0.7262178711670285,
+        "bias": -1.0873061455852944,
+        "f1_150": 0.7244525547445255,
+        "extreme_rmse": 65.89168243984518,
+        "n_extreme_true": 1199,
+        "n_extreme_pred": 993,
+        "n_predictions": 6489
+      },
+      "11": {
+        "rmse": 63.753515131173195,
+        "mae": 47.338245786600964,
+        "r2": 0.3769807288202045,
+        "bias": 9.374620787290384,
+        "f1_150": 0.7847913263032823,
+        "extreme_rmse": 72.85664322461164,
+        "n_extreme_true": 3048,
+        "n_extreme_pred": 3685,
+        "n_predictions": 6630
+      },
+      "12": {
+        "rmse": 80.21093916918561,
+        "mae": 57.04378208256175,
+        "r2": 0.26899693440422834,
+        "bias": -15.39009763501121,
+        "f1_150": 0.7385934819897084,
+        "extreme_rmse": 100.15089323767012,
+        "n_extreme_true": 2916,
+        "n_extreme_pred": 2914,
+        "n_predictions": 5659
+      }
+    },
+    "test_seasonal": {
+      "winter": {
+        "rmse": 66.43081772651423,
+        "mae": 45.13747792621488,
+        "r2": 0.4088769415118564,
+        "bias": -8.426755505473972,
+        "f1_150": 0.6952638700947226,
+        "extreme_rmse": 95.21862652038357,
+        "n_extreme_true": 3725,
+        "n_extreme_pred": 3665,
+        "n_predictions": 10241
+      },
+      "pre_monsoon": {
+        "rmse": 19.203209441622587,
+        "mae": 14.470757934937122,
+        "r2": 0.4223960448349925,
+        "bias": 1.0614405780426859,
+        "f1_150": 0.0,
+        "extreme_rmse": 80.96954585201571,
+        "n_extreme_true": 5,
+        "n_extreme_pred": 0,
+        "n_predictions": 6896
+      },
+      "monsoon": {
+        "rmse": 16.357841197333727,
+        "mae": 12.935372774733809,
+        "r2": 0.28364042310366666,
+        "bias": 5.495709462392783,
+        "f1_150": 0.0,
+        "extreme_rmse": 114.11696086199532,
+        "n_extreme_true": 7,
+        "n_extreme_pred": 0,
+        "n_predictions": 18134
+      },
+      "post_monsoon": {
+        "rmse": 52.32368831837354,
+        "mae": 36.57139959618495,
+        "r2": 0.5822043525027709,
+        "bias": 4.199878515209411,
+        "f1_150": 0.7699719887955182,
+        "extreme_rmse": 70.95960804630234,
+        "n_extreme_true": 4247,
+        "n_extreme_pred": 4678,
+        "n_predictions": 13119
+      }
+    },
+    "test_skill": {
+      "model_metrics": {
+        "rmse": 42.76700836709089,
+        "mae": 26.37721635381414,
+        "r2": 0.6789395717822245,
+        "bias": 1.5659990230768015,
+        "f1_150": 0.7355913517486372,
+        "extreme_rmse": 83.21097788841037,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 8343,
+        "n_predictions": 48390
+      },
+      "clim_metrics": {
+        "rmse": 57.64021718869276,
+        "mae": 37.21833730747227,
+        "r2": 0.4167963215654591,
+        "bias": -6.396113046798974,
+        "f1_150": 0.05181224004753417,
+        "extreme_rmse": 118.02457951876583,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 431,
+        "n_predictions": 48390
+      },
+      "persist_metrics": {
+        "rmse": 34.1410689449865,
+        "mae": 18.88308232021685,
+        "r2": 0.7821079873771504,
+        "bias": -0.4516075185033705,
+        "f1_150": 0.8056699951120732,
+        "extreme_rmse": 64.04897290859206,
+        "n_extreme_true": 7190,
+        "n_extreme_pred": 7131,
+        "n_predictions": 44767
+      },
+      "skill_vs_climatology": 0.29128439736832556,
+      "skill_vs_persistence": -0.39687027289892307
+    },
+    "feature_importance": [
+      [
+        "sp",
+        693
+      ],
+      [
+        "blh_lag3d",
+        521
+      ],
+      [
+        "WS10_lag3d",
+        507
+      ],
+      [
+        "blh_lag1d",
+        491
+      ],
+      [
+        "nh3_skew",
+        449
+      ],
+      [
+        "aai_delta_median_r1_r05",
+        435
+      ],
+      [
+        "WS10_lag1d",
+        433
+      ],
+      [
+        "aai_skew",
+        428
+      ],
+      [
+        "aai_delta_std_r2_r05",
+        400
+      ],
+      [
+        "WD10_sin_rm_14d",
+        384
+      ],
+      [
+        "WS10_rollmin_7d",
+        374
+      ],
+      [
+        "WD10_var_14d",
+        371
+      ],
+      [
+        "aai_kurt",
+        365
+      ],
+      [
+        "o3_kurt",
+        364
+      ],
+      [
+        "aai_delta_median_r2_r1",
+        360
+      ],
+      [
+        "o3_delta_median_r1_r05",
+        348
+      ],
+      [
+        "o3_delta_std_r2_r05",
+        347
+      ],
+      [
+        "WD10_cos_rm_14d",
+        346
+      ],
+      [
+        "no2_skew",
+        345
+      ],
+      [
+        "MSLP_tend_rollstd_7d",
+        344
+      ],
+      [
+        "SP_tend_rollstd_3d",
+        339
+      ],
+      [
+        "doy_sin_2",
+        330
+      ],
+      [
+        "doy_sin",
+        329
+      ],
+      [
+        "RH_anom_7d",
+        328
+      ],
+      [
+        "o3_delta_median_r2_r1",
+        327
+      ],
+      [
+        "WS10_rollmax_7d",
+        325
+      ],
+      [
+        "aod_uncertainty",
+        321
+      ],
+      [
+        "WD10_sin_rm_7d",
+        318
+      ],
+      [
+        "BLH_tend_rollmean_7d",
+        317
+      ],
+      [
+        "o3_skew",
+        317
+      ],
+      [
+        "dWS_rollmean_3d",
+        316
+      ],
+      [
+        "nh3_kurt",
+        315
+      ],
+      [
+        "dWD_rollstd_3d",
+        312
+      ],
+      [
+        "nh3_cv",
+        309
+      ],
+      [
+        "WD10_cos_rm_7d",
+        307
+      ],
+      [
+        "BLH_tend",
+        305
+      ],
+      [
+        "SP_tend_rollstd_7d",
+        300
+      ],
+      [
+        "optical_depth_047",
+        300
+      ],
+      [
+        "WD10_var_7d",
+        297
+      ],
+      [
+        "no2_kurt",
+        297
+      ],
+      [
+        "dWS_rollstd_3d",
+        296
+      ],
+      [
+        "BLH_tend_rollmean_3d",
+        293
+      ],
+      [
+        "hcho_kurt",
+        293
+      ],
+      [
+        "WS10_rollstd_3d",
+        283
+      ],
+      [
+        "MSLP_tend_rollmean_7d",
+        283
+      ],
+      [
+        "no2_delta_std_r2_r05",
+        283
+      ],
+      [
+        "doy_cos",
+        280
+      ],
+      [
+        "BLH_tend_rollstd_3d",
+        277
+      ],
+      [
+        "aai_cv",
+        277
+      ],
+      [
+        "o3_mad",
+        277
+      ],
+      [
+        "blh_rollmin_7d",
+        275
+      ],
+      [
+        "o3_iqr",
+        275
+      ],
+      [
+        "RH_rollmax_7d",
+        274
+      ],
+      [
+        "hcho_delta_std_r2_r05",
+        270
+      ],
+      [
+        "MSLP_tend_rollstd_3d",
+        268
+      ],
+      [
+        "hcho_delta_median_r1_r05",
+        266
+      ],
+      [
+        "doy_sin_3",
+        264
+      ],
+      [
+        "aai_iqr",
+        262
+      ],
+      [
+        "cloud_skew",
+        262
+      ],
+      [
+        "VC_rollmin_7d",
+        259
+      ],
+      [
+        "BLH_tend_rollstd_7d",
+        259
+      ],
+      [
+        "co_delta_std_r2_r05",
+        259
+      ],
+      [
+        "blh_daily_min",
+        258
+      ],
+      [
+        "so2_kurt",
+        258
+      ],
+      [
+        "cloud_delta_median_r1_r05",
+        256
+      ],
+      [
+        "cloud_kurt",
+        254
+      ],
+      [
+        "doy_cos_3",
+        253
+      ],
+      [
+        "dWD_abs",
+        251
+      ],
+      [
+        "v10",
+        250
+      ],
+      [
+        "hcho_skew",
+        250
+      ],
+      [
+        "dWD",
+        249
+      ],
+      [
+        "so2_delta_std_r2_r05",
+        248
+      ],
+      [
+        "VCi",
+        247
+      ],
+      [
+        "MSLP_tend",
+        247
+      ],
+      [
+        "aai_std",
+        247
+      ],
+      [
+        "so2_skew",
+        246
+      ],
+      [
+        "aai_mad",
+        246
+      ],
+      [
+        "o3_range",
+        245
+      ],
+      [
+        "co_kurt",
+        242
+      ],
+      [
+        "WS10_daily_mean",
+        241
+      ],
+      [
+        "aai_range",
+        239
+      ],
+      [
+        "cloud_delta_median_r2_r1",
+        238
+      ],
+      [
+        "SP_tend",
+        237
+      ],
+      [
+        "co_delta_median_r2_r1",
+        237
+      ],
+      [
+        "WS10_daily_max",
+        235
+      ],
+      [
+        "co_skew",
+        231
+      ],
+      [
+        "t2m_daily_max",
+        228
+      ],
+      [
+        "hcho_delta_median_r2_r1",
+        227
+      ],
+      [
+        "MSLP_tend_rollmean_3d",
+        226
+      ],
+      [
+        "WD10_sin",
+        225
+      ],
+      [
+        "no2_cv",
+        225
+      ],
+      [
+        "no2_delta_median_r2_r1",
+        224
+      ],
+      [
+        "SP_tend_rollmean_3d",
+        223
+      ],
+      [
+        "WS10_daily_min",
+        222
+      ],
+      [
+        "aai_max",
+        220
+      ],
+      [
+        "VC_rollmean_14d",
+        217
+      ],
+      [
+        "no2_delta_median_r1_r05",
+        217
+      ],
+      [
+        "WD100",
+        216
+      ],
+      [
+        "t2m_daily_mean",
+        216
+      ],
+      [
+        "cloud_delta_std_r2_r05",
+        215
+      ],
+      [
+        "VC_daily_max",
+        214
+      ],
+      [
+        "so2_delta_median_r2_r1",
+        214
+      ],
+      [
+        "WD10",
+        213
+      ],
+      [
+        "blh_daily_mean",
+        213
+      ],
+      [
+        "blh_daily_max",
+        212
+      ],
+      [
+        "u10",
+        211
+      ],
+      [
+        "so2_cv",
+        211
+      ],
+      [
+        "dT_rollstd_3d",
+        210
+      ],
+      [
+        "tcc",
+        208
+      ],
+      [
+        "nh3_iqr",
+        208
+      ],
+      [
+        "RH_rollstd_7d",
+        207
+      ],
+      [
+        "cloud_cv",
+        206
+      ],
+      [
+        "WD10_cos",
+        205
+      ],
+      [
+        "v100",
+        203
+      ],
+      [
+        "SP_tend_rollmean_7d",
+        203
+      ],
+      [
+        "dWS",
+        201
+      ],
+      [
+        "WS10_rollmean_3d",
+        198
+      ],
+      [
+        "doy_cos_2",
+        196
+      ],
+      [
+        "VPD_daily_max",
+        194
+      ],
+      [
+        "msl",
+        193
+      ],
+      [
+        "cloud_mad",
+        193
+      ],
+      [
+        "no2_std",
+        190
+      ],
+      [
+        "hcho_iqr",
+        190
+      ],
+      [
+        "hcho_cv",
+        190
+      ],
+      [
+        "aai_min",
+        189
+      ],
+      [
+        "blh_rollmean_14d",
+        185
+      ],
+      [
+        "dT_rollstd_7d",
+        184
+      ],
+      [
+        "o3_std",
+        181
+      ],
+      [
+        "blh",
+        180
+      ],
+      [
+        "co_mad",
+        179
+      ],
+      [
+        "u100",
+        178
+      ],
+      [
+        "blh_anom_14d",
+        178
+      ],
+      [
+        "so2_delta_median_r1_r05",
+        178
+      ],
+      [
+        "RH_daily_min",
+        176
+      ],
+      [
+        "VC_daily_min",
+        176
+      ],
+      [
+        "so2_p10",
+        176
+      ],
+      [
+        "co_delta_median_r1_r05",
+        175
+      ],
+      [
+        "hcho_min",
+        175
+      ],
+      [
+        "hcho_max",
+        175
+      ],
+      [
+        "o3_cv",
+        174
+      ],
+      [
+        "co_max",
+        171
+      ],
+      [
+        "VC_daily_mean",
+        170
+      ],
+      [
+        "optical_depth_055",
+        170
+      ],
+      [
+        "nh3_min",
+        170
+      ],
+      [
+        "d2m",
+        169
+      ],
+      [
+        "RH_rollmean_3d",
+        169
+      ],
+      [
+        "VC_anom_14d",
+        169
+      ],
+      [
+        "RH_daily_mean",
+        167
+      ],
+      [
+        "VPD_daily_min",
+        167
+      ],
+      [
+        "blh_rollmean_3d",
+        167
+      ],
+      [
+        "so2_min",
+        166
+      ],
+      [
+        "cloud_iqr",
+        166
+      ],
+      [
+        "theta",
+        164
+      ],
+      [
+        "blh_anom_7d",
+        164
+      ],
+      [
+        "no2_max",
+        164
+      ],
+      [
+        "hcho_range",
+        164
+      ],
+      [
+        "nh3_mad",
+        164
+      ],
+      [
+        "VPD_rollmean_7d",
+        163
+      ],
+      [
+        "VC_anom_7d",
+        162
+      ],
+      [
+        "no2_mad",
+        162
+      ],
+      [
+        "no2_iqr",
+        161
+      ],
+      [
+        "no2_range",
+        160
+      ],
+      [
+        "so2_iqr",
+        160
+      ],
+      [
+        "hcho_mad",
+        159
+      ],
+      [
+        "WS100",
+        157
+      ],
+      [
+        "so2_median",
+        156
+      ],
+      [
+        "co_iqr",
+        156
+      ],
+      [
+        "co_range",
+        155
+      ],
+      [
+        "hcho_p90",
+        155
+      ],
+      [
+        "RH_daily_max",
+        153
+      ],
+      [
+        "so2_mad",
+        153
+      ],
+      [
+        "hcho_p10",
+        152
+      ],
+      [
+        "cloud_min",
+        151
+      ],
+      [
+        "nh3_max",
+        150
+      ],
+      [
+        "t2m",
+        149
+      ],
+      [
+        "RH_rollmean_7d",
+        149
+      ],
+      [
+        "so2_mean",
+        149
+      ],
+      [
+        "RH",
+        148
+      ],
+      [
+        "WS10",
+        148
+      ],
+      [
+        "co_cv",
+        147
+      ],
+      [
+        "hcho_p25",
+        147
+      ],
+      [
+        "VC",
+        146
+      ],
+      [
+        "dWS_abs",
+        146
+      ],
+      [
+        "hcho_mean",
+        144
+      ],
+      [
+        "VPD_daily_mean",
+        142
+      ],
+      [
+        "so2_p75",
+        142
+      ],
+      [
+        "hcho_p75",
+        142
+      ],
+      [
+        "VPD_rollmean_3d",
+        141
+      ],
+      [
+        "aai_p10",
+        141
+      ],
+      [
+        "aai_p90",
+        141
+      ],
+      [
+        "ch4_kurt",
+        141
+      ],
+      [
+        "nh3_median",
+        141
+      ],
+      [
+        "t2m_daily_min",
+        140
+      ],
+      [
+        "aai_median",
+        138
+      ],
+      [
+        "alh_mad",
+        137
+      ],
+      [
+        "ch4_skew",
+        137
+      ],
+      [
+        "VC_rollmean_3d",
+        136
+      ],
+      [
+        "hcho_std",
+        136
+      ],
+      [
+        "hcho_median",
+        135
+      ],
+      [
+        "nh3_p90",
+        135
+      ],
+      [
+        "VPD",
+        132
+      ],
+      [
+        "dT_rollmean_7d",
+        132
+      ],
+      [
+        "o3_max",
+        132
+      ],
+      [
+        "co_p90",
+        131
+      ],
+      [
+        "ch4_delta_median_r2_r1",
+        130
+      ],
+      [
+        "ch4_delta_std_r2_r05",
+        130
+      ],
+      [
+        "blh_rollmean_7d",
+        129
+      ],
+      [
+        "so2_p25",
+        129
+      ],
+      [
+        "co_std",
+        129
+      ],
+      [
+        "co_p75",
+        129
+      ],
+      [
+        "cloud_p10",
+        129
+      ],
+      [
+        "q",
+        127
+      ],
+      [
+        "aai_p25",
+        126
+      ],
+      [
+        "no2_p10",
+        125
+      ],
+      [
+        "so2_std",
+        125
+      ],
+      [
+        "co_mean",
+        125
+      ],
+      [
+        "so2_range",
+        124
+      ],
+      [
+        "nh3_p10",
+        124
+      ],
+      [
+        "so2_p90",
+        123
+      ],
+      [
+        "VC_rollmean_7d",
+        122
+      ],
+      [
+        "cloud_range",
+        122
+      ],
+      [
+        "o3_min",
+        122
+      ],
+      [
+        "nh3_range",
+        122
+      ],
+      [
+        "nh3_p75",
+        119
+      ],
+      [
+        "so2_max",
+        117
+      ],
+      [
+        "nh3_std",
+        117
+      ],
+      [
+        "aai_p75",
+        116
+      ],
+      [
+        "alh_kurt",
+        112
+      ],
+      [
+        "cloud_median",
+        111
+      ],
+      [
+        "cloud_std",
+        111
+      ],
+      [
+        "dT_rollmean_3d",
+        110
+      ],
+      [
+        "no2_p90",
+        109
+      ],
+      [
+        "no2_min",
+        104
+      ],
+      [
+        "cloud_p25",
+        104
+      ],
+      [
+        "co_median",
+        103
+      ],
+      [
+        "alh_min",
+        103
+      ],
+      [
+        "cloud_max",
+        103
+      ],
+      [
+        "o3_p10",
+        102
+      ],
+      [
+        "nh3_p25",
+        101
+      ],
+      [
+        "o3_median",
+        96
+      ],
+      [
+        "nh3_mean",
+        96
+      ],
+      [
+        "ch4_mad",
+        95
+      ],
+      [
+        "alh_skew",
+        94
+      ],
+      [
+        "ch4_min",
+        94
+      ],
+      [
+        "ch4_iqr",
+        93
+      ],
+      [
+        "dT",
+        91
+      ],
+      [
+        "no2_median",
+        90
+      ],
+      [
+        "no2_p25",
+        90
+      ],
+      [
+        "no2_p75",
+        89
+      ],
+      [
+        "co_p25",
+        87
+      ],
+      [
+        "ch4_range",
+        87
+      ],
+      [
+        "o3_p90",
+        87
+      ],
+      [
+        "aai_mean",
+        85
+      ],
+      [
+        "alh_iqr",
+        84
+      ],
+      [
+        "alh_delta_median_r2_r1",
+        83
+      ],
+      [
+        "ch4_delta_median_r1_r05",
+        81
+      ],
+      [
+        "no2_mean",
+        80
+      ],
+      [
+        "alh_std",
+        80
+      ],
+      [
+        "o3_mean",
+        80
+      ],
+      [
+        "co_p10",
+        79
+      ],
+      [
+        "o3_p25",
+        79
+      ],
+      [
+        "co_min",
+        78
+      ],
+      [
+        "alh_delta_median_r1_r05",
+        77
+      ],
+      [
+        "cloud_p90",
+        77
+      ],
+      [
+        "cloud_p75",
+        76
+      ],
+      [
+        "ch4_p25",
+        73
+      ],
+      [
+        "alh_cv",
+        71
+      ],
+      [
+        "ch4_median",
+        67
+      ],
+      [
+        "CLR",
+        66
+      ],
+      [
+        "alh_median",
+        65
+      ],
+      [
+        "alh_delta_std_r2_r05",
+        65
+      ],
+      [
+        "ch4_std",
+        65
+      ],
+      [
+        "alh_p10",
+        64
+      ],
+      [
+        "o3_p75",
+        63
+      ],
+      [
+        "cloud_mean",
+        62
+      ],
+      [
+        "alh_max",
+        59
+      ],
+      [
+        "ch4_p10",
+        59
+      ],
+      [
+        "ch4_cv",
+        59
+      ],
+      [
+        "ch4_max",
+        58
+      ],
+      [
+        "alh_mean",
+        57
+      ],
+      [
+        "alh_p25",
+        54
+      ],
+      [
+        "ch4_mean",
+        51
+      ],
+      [
+        "ch4_p90",
+        51
+      ],
+      [
+        "alh_p75",
+        49
+      ],
+      [
+        "alh_p90",
+        49
+      ],
+      [
+        "alh_range",
+        49
+      ],
+      [
+        "ch4_p75",
+        47
+      ],
+      [
+        "calm7_count",
+        30
+      ],
+      [
+        "qa_cloudmask",
+        22
+      ],
+      [
+        "Stagnant",
+        17
+      ],
+      [
+        "stagnant7_count",
+        17
+      ],
+      [
+        "calm3_count",
+        13
+      ],
+      [
+        "HighRH",
+        12
+      ],
+      [
+        "qa_aod",
+        11
+      ],
+      [
+        "heating_season_flag",
+        7
+      ],
+      [
+        "stagnant3_count",
+        6
+      ],
+      [
+        "burning_season_flag",
+        4
+      ],
+      [
+        "calm3_flag",
+        1
+      ],
+      [
+        "calm7_flag",
+        1
+      ],
+      [
+        "stagnant3_flag",
+        0
+      ],
+      [
+        "stagnant7_flag",
+        0
+      ],
+      [
+        "qa_adjacency",
+        0
+      ],
+      [
+        "nh3_delta_median_r1_r05",
+        0
+      ],
+      [
+        "nh3_delta_median_r2_r1",
+        0
+      ],
+      [
+        "nh3_delta_std_r2_r05",
+        0
+      ]
+    ]
+  },
+  "timestamp": "20260207_201330"
+}

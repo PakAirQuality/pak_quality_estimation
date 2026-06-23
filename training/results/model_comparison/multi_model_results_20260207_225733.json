@@ -1,0 +1,1396 @@
+{
+  "timestamp": "20260207_225733",
+  "train_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "dev_year": 2024,
+  "test_year": 2025,
+  "n_features": 305,
+  "n_train": 39595,
+  "n_dev": 20667,
+  "n_test": 48390,
+  "model_comparison": [
+    {
+      "model": "LightGBM",
+      "rmse": 42.76700836709089,
+      "mae": 26.37721635381414,
+      "r2": 0.6789395717822245,
+      "bias": 1.5659990230768015,
+      "f1_150": 0.7355913517486372,
+      "extreme_rmse": 83.21097788841037,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 8343,
+      "n_predictions": 48390
+    },
+    {
+      "model": "XGBoost",
+      "rmse": 42.81625680131546,
+      "mae": 26.4756129268481,
+      "r2": 0.6781997104734194,
+      "bias": 2.3426768871175176,
+      "f1_150": 0.7357985646515023,
+      "extreme_rmse": 82.65807244622943,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 8458,
+      "n_predictions": 48390
+    },
+    {
+      "model": "CatBoost",
+      "error": "No module named 'catboost'"
+    },
+    {
+      "model": "RandomForest",
+      "rmse": 43.428514338031114,
+      "mae": 28.085863794787006,
+      "r2": 0.6689306449685694,
+      "bias": 5.877351505234512,
+      "f1_150": 0.7316517883889522,
+      "extreme_rmse": 81.20221153496459,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 8707,
+      "n_predictions": 48390
+    },
+    {
+      "model": "ExtraTrees",
+      "rmse": 43.30737435075224,
+      "mae": 28.0213236362598,
+      "r2": 0.6707750461584051,
+      "bias": 4.931076908959134,
+      "f1_150": 0.7348443638561499,
+      "extreme_rmse": 82.34515721012477,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 8561,
+      "n_predictions": 48390
+    },
+    {
+      "model": "Ridge",
+      "rmse": 2582.676832729667,
+      "mae": 93.99336006466076,
+      "r2": -1169.8713274831607,
+      "bias": -56.54093944071613,
+      "f1_150": 0.7222252641953677,
+      "extreme_rmse": 4361.907097128571,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 10279,
+      "n_predictions": 48390
+    },
+    {
+      "model": "ElasticNet",
+      "rmse": 69.12412060382906,
+      "mae": 36.60027817499066,
+      "r2": 0.1612582219729638,
+      "bias": -2.9504539493106225,
+      "f1_150": 0.6922797676669894,
+      "extreme_rmse": 131.67126402570491,
+      "n_extreme_true": 7984,
+      "n_extreme_pred": 8544,
+      "n_predictions": 48390
+    }
+  ],
+  "detailed_results": {
+    "lightgbm": {
+      "metrics": {
+        "rmse": 42.76700836709089,
+        "mae": 26.37721635381414,
+        "r2": 0.6789395717822245,
+        "bias": 1.5659990230768015,
+        "f1_150": 0.7355913517486372,
+        "extreme_rmse": 83.21097788841037,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 8343,
+        "n_predictions": 48390
+      },
+      "feature_importance": [
+        [
+          "t2m",
+          149
+        ],
+        [
+          "d2m",
+          169
+        ],
+        [
+          "u10",
+          211
+        ],
+        [
+          "v10",
+          250
+        ],
+        [
+          "sp",
+          693
+        ],
+        [
+          "u100",
+          178
+        ],
+        [
+          "v100",
+          203
+        ],
+        [
+          "blh",
+          180
+        ],
+        [
+          "msl",
+          193
+        ],
+        [
+          "tcc",
+          208
+        ],
+        [
+          "RH",
+          148
+        ],
+        [
+          "q",
+          127
+        ],
+        [
+          "VPD",
+          132
+        ],
+        [
+          "dT",
+          91
+        ],
+        [
+          "theta",
+          164
+        ],
+        [
+          "WS10",
+          148
+        ],
+        [
+          "WD10",
+          213
+        ],
+        [
+          "WS100",
+          157
+        ],
+        [
+          "WD100",
+          216
+        ],
+        [
+          "dWS",
+          201
+        ],
+        [
+          "dWD",
+          249
+        ],
+        [
+          "VC",
+          146
+        ],
+        [
+          "VCi",
+          247
+        ],
+        [
+          "BLH_tend",
+          305
+        ],
+        [
+          "CLR",
+          66
+        ],
+        [
+          "MSLP_tend",
+          247
+        ],
+        [
+          "SP_tend",
+          237
+        ],
+        [
+          "Stagnant",
+          17
+        ],
+        [
+          "HighRH",
+          12
+        ],
+        [
+          "WS10_daily_mean",
+          241
+        ],
+        [
+          "WS10_daily_max",
+          235
+        ],
+        [
+          "WS10_daily_min",
+          222
+        ],
+        [
+          "blh_daily_mean",
+          213
+        ],
+        [
+          "blh_daily_max",
+          212
+        ],
+        [
+          "blh_daily_min",
+          258
+        ],
+        [
+          "RH_daily_mean",
+          167
+        ],
+        [
+          "RH_daily_max",
+          153
+        ],
+        [
+          "RH_daily_min",
+          176
+        ],
+        [
+          "t2m_daily_mean",
+          216
+        ],
+        [
+          "t2m_daily_max",
+          228
+        ],
+        [
+          "t2m_daily_min",
+          140
+        ],
+        [
+          "VPD_daily_mean",
+          142
+        ],
+        [
+          "VPD_daily_max",
+          194
+        ],
+        [
+          "VPD_daily_min",
+          167
+        ],
+        [
+          "VC_daily_mean",
+          170
+        ],
+        [
+          "VC_daily_max",
+          214
+        ],
+        [
+          "VC_daily_min",
+          176
+        ],
+        [
+          "doy_sin",
+          329
+        ],
+        [
+          "doy_cos",
+          280
+        ],
+        [
+          "doy_sin_2",
+          330
+        ],
+        [
+          "doy_cos_2",
+          196
+        ],
+        [
+          "doy_sin_3",
+          264
+        ],
+        [
+          "doy_cos_3",
+          253
+        ],
+        [
+          "heating_season_flag",
+          7
+        ],
+        [
+          "burning_season_flag",
+          4
+        ],
+        [
+          "WS10_lag1d",
+          433
+        ],
+        [
+          "WS10_lag3d",
+          507
+        ],
+        [
+          "WS10_rollmean_3d",
+          198
+        ],
+        [
+          "WS10_rollstd_3d",
+          283
+        ],
+        [
+          "WS10_rollmin_7d",
+          374
+        ],
+        [
+          "WS10_rollmax_7d",
+          325
+        ],
+        [
+          "calm3_count",
+          13
+        ],
+        [
+          "calm3_flag",
+          1
+        ],
+        [
+          "calm7_count",
+          30
+        ],
+        [
+          "calm7_flag",
+          1
+        ],
+        [
+          "blh_lag1d",
+          491
+        ],
+        [
+          "blh_lag3d",
+          521
+        ],
+        [
+          "blh_rollmean_3d",
+          167
+        ],
+        [
+          "blh_rollmin_7d",
+          275
+        ],
+        [
+          "blh_rollmean_7d",
+          129
+        ],
+        [
+          "blh_anom_7d",
+          164
+        ],
+        [
+          "blh_rollmean_14d",
+          185
+        ],
+        [
+          "blh_anom_14d",
+          178
+        ],
+        [
+          "RH_rollmean_3d",
+          169
+        ],
+        [
+          "RH_rollmax_7d",
+          274
+        ],
+        [
+          "RH_rollmean_7d",
+          149
+        ],
+        [
+          "RH_anom_7d",
+          328
+        ],
+        [
+          "RH_rollstd_7d",
+          207
+        ],
+        [
+          "VPD_rollmean_3d",
+          141
+        ],
+        [
+          "VPD_rollmean_7d",
+          163
+        ],
+        [
+          "VC_rollmean_3d",
+          136
+        ],
+        [
+          "VC_rollmin_7d",
+          259
+        ],
+        [
+          "VC_rollmean_7d",
+          122
+        ],
+        [
+          "VC_anom_7d",
+          162
+        ],
+        [
+          "VC_rollmean_14d",
+          217
+        ],
+        [
+          "VC_anom_14d",
+          169
+        ],
+        [
+          "stagnant3_count",
+          6
+        ],
+        [
+          "stagnant3_flag",
+          0
+        ],
+        [
+          "stagnant7_count",
+          17
+        ],
+        [
+          "stagnant7_flag",
+          0
+        ],
+        [
+          "WD10_sin",
+          225
+        ],
+        [
+          "WD10_cos",
+          205
+        ],
+        [
+          "WD10_sin_rm_7d",
+          318
+        ],
+        [
+          "WD10_cos_rm_7d",
+          307
+        ],
+        [
+          "WD10_var_7d",
+          297
+        ],
+        [
+          "WD10_sin_rm_14d",
+          384
+        ],
+        [
+          "WD10_cos_rm_14d",
+          346
+        ],
+        [
+          "WD10_var_14d",
+          371
+        ],
+        [
+          "dWS_abs",
+          146
+        ],
+        [
+          "dWS_rollmean_3d",
+          316
+        ],
+        [
+          "dWS_rollstd_3d",
+          296
+        ],
+        [
+          "dWD_abs",
+          251
+        ],
+        [
+          "dWD_rollstd_3d",
+          312
+        ],
+        [
+          "BLH_tend_rollmean_3d",
+          293
+        ],
+        [
+          "BLH_tend_rollstd_3d",
+          277
+        ],
+        [
+          "BLH_tend_rollmean_7d",
+          317
+        ],
+        [
+          "BLH_tend_rollstd_7d",
+          259
+        ],
+        [
+          "MSLP_tend_rollmean_3d",
+          226
+        ],
+        [
+          "MSLP_tend_rollstd_3d",
+          268
+        ],
+        [
+          "MSLP_tend_rollmean_7d",
+          283
+        ],
+        [
+          "MSLP_tend_rollstd_7d",
+          344
+        ],
+        [
+          "SP_tend_rollmean_3d",
+          223
+        ],
+        [
+          "SP_tend_rollstd_3d",
+          339
+        ],
+        [
+          "SP_tend_rollmean_7d",
+          203
+        ],
+        [
+          "SP_tend_rollstd_7d",
+          300
+        ],
+        [
+          "dT_rollmean_3d",
+          110
+        ],
+        [
+          "dT_rollstd_3d",
+          210
+        ],
+        [
+          "dT_rollmean_7d",
+          132
+        ],
+        [
+          "dT_rollstd_7d",
+          184
+        ],
+        [
+          "optical_depth_047",
+          300
+        ],
+        [
+          "optical_depth_055",
+          170
+        ],
+        [
+          "aod_uncertainty",
+          321
+        ],
+        [
+          "qa_cloudmask",
+          22
+        ],
+        [
+          "qa_adjacency",
+          0
+        ],
+        [
+          "qa_aod",
+          11
+        ],
+        [
+          "no2_median",
+          90
+        ],
+        [
+          "no2_mean",
+          80
+        ],
+        [
+          "no2_std",
+          190
+        ],
+        [
+          "no2_min",
+          104
+        ],
+        [
+          "no2_max",
+          164
+        ],
+        [
+          "no2_p10",
+          125
+        ],
+        [
+          "no2_p25",
+          90
+        ],
+        [
+          "no2_p75",
+          89
+        ],
+        [
+          "no2_p90",
+          109
+        ],
+        [
+          "no2_iqr",
+          161
+        ],
+        [
+          "no2_mad",
+          162
+        ],
+        [
+          "no2_range",
+          160
+        ],
+        [
+          "no2_cv",
+          225
+        ],
+        [
+          "no2_skew",
+          345
+        ],
+        [
+          "no2_kurt",
+          297
+        ],
+        [
+          "no2_delta_median_r1_r05",
+          217
+        ],
+        [
+          "no2_delta_median_r2_r1",
+          224
+        ],
+        [
+          "no2_delta_std_r2_r05",
+          283
+        ],
+        [
+          "so2_median",
+          156
+        ],
+        [
+          "so2_mean",
+          149
+        ],
+        [
+          "so2_std",
+          125
+        ],
+        [
+          "so2_min",
+          166
+        ],
+        [
+          "so2_max",
+          117
+        ],
+        [
+          "so2_p10",
+          176
+        ],
+        [
+          "so2_p25",
+          129
+        ],
+        [
+          "so2_p75",
+          142
+        ],
+        [
+          "so2_p90",
+          123
+        ],
+        [
+          "so2_iqr",
+          160
+        ],
+        [
+          "so2_mad",
+          153
+        ],
+        [
+          "so2_range",
+          124
+        ],
+        [
+          "so2_cv",
+          211
+        ],
+        [
+          "so2_skew",
+          246
+        ],
+        [
+          "so2_kurt",
+          258
+        ],
+        [
+          "so2_delta_median_r1_r05",
+          178
+        ],
+        [
+          "so2_delta_median_r2_r1",
+          214
+        ],
+        [
+          "so2_delta_std_r2_r05",
+          248
+        ],
+        [
+          "co_median",
+          103
+        ],
+        [
+          "co_mean",
+          125
+        ],
+        [
+          "co_std",
+          129
+        ],
+        [
+          "co_min",
+          78
+        ],
+        [
+          "co_max",
+          171
+        ],
+        [
+          "co_p10",
+          79
+        ],
+        [
+          "co_p25",
+          87
+        ],
+        [
+          "co_p75",
+          129
+        ],
+        [
+          "co_p90",
+          131
+        ],
+        [
+          "co_iqr",
+          156
+        ],
+        [
+          "co_mad",
+          179
+        ],
+        [
+          "co_range",
+          155
+        ],
+        [
+          "co_cv",
+          147
+        ],
+        [
+          "co_skew",
+          231
+        ],
+        [
+          "co_kurt",
+          242
+        ],
+        [
+          "co_delta_median_r1_r05",
+          175
+        ],
+        [
+          "co_delta_median_r2_r1",
+          237
+        ],
+        [
+          "co_delta_std_r2_r05",
+          259
+        ],
+        [
+          "hcho_median",
+          135
+        ],
+        [
+          "hcho_mean",
+          144
+        ],
+        [
+          "hcho_std",
+          136
+        ],
+        [
+          "hcho_min",
+          175
+        ],
+        [
+          "hcho_max",
+          175
+        ],
+        [
+          "hcho_p10",
+          152
+        ],
+        [
+          "hcho_p25",
+          147
+        ],
+        [
+          "hcho_p75",
+          142
+        ],
+        [
+          "hcho_p90",
+          155
+        ],
+        [
+          "hcho_iqr",
+          190
+        ],
+        [
+          "hcho_mad",
+          159
+        ],
+        [
+          "hcho_range",
+          164
+        ],
+        [
+          "hcho_cv",
+          190
+        ],
+        [
+          "hcho_skew",
+          250
+        ],
+        [
+          "hcho_kurt",
+          293
+        ],
+        [
+          "hcho_delta_median_r1_r05",
+          266
+        ],
+        [
+          "hcho_delta_median_r2_r1",
+          227
+        ],
+        [
+          "hcho_delta_std_r2_r05",
+          270
+        ],
+        [
+          "aai_median",
+          138
+        ],
+        [
+          "aai_mean",
+          85
+        ],
+        [
+          "aai_std",
+          247
+        ],
+        [
+          "aai_min",
+          189
+        ],
+        [
+          "aai_max",
+          220
+        ],
+        [
+          "aai_p10",
+          141
+        ],
+        [
+          "aai_p25",
+          126
+        ],
+        [
+          "aai_p75",
+          116
+        ],
+        [
+          "aai_p90",
+          141
+        ],
+        [
+          "aai_iqr",
+          262
+        ],
+        [
+          "aai_mad",
+          246
+        ],
+        [
+          "aai_range",
+          239
+        ],
+        [
+          "aai_cv",
+          277
+        ],
+        [
+          "aai_skew",
+          428
+        ],
+        [
+          "aai_kurt",
+          365
+        ],
+        [
+          "aai_delta_median_r1_r05",
+          435
+        ],
+        [
+          "aai_delta_median_r2_r1",
+          360
+        ],
+        [
+          "aai_delta_std_r2_r05",
+          400
+        ],
+        [
+          "alh_median",
+          65
+        ],
+        [
+          "alh_mean",
+          57
+        ],
+        [
+          "alh_std",
+          80
+        ],
+        [
+          "alh_min",
+          103
+        ],
+        [
+          "alh_max",
+          59
+        ],
+        [
+          "alh_p10",
+          64
+        ],
+        [
+          "alh_p25",
+          54
+        ],
+        [
+          "alh_p75",
+          49
+        ],
+        [
+          "alh_p90",
+          49
+        ],
+        [
+          "alh_iqr",
+          84
+        ],
+        [
+          "alh_mad",
+          137
+        ],
+        [
+          "alh_range",
+          49
+        ],
+        [
+          "alh_cv",
+          71
+        ],
+        [
+          "alh_skew",
+          94
+        ],
+        [
+          "alh_kurt",
+          112
+        ],
+        [
+          "alh_delta_median_r1_r05",
+          77
+        ],
+        [
+          "alh_delta_median_r2_r1",
+          83
+        ],
+        [
+          "alh_delta_std_r2_r05",
+          65
+        ],
+        [
+          "ch4_median",
+          67
+        ],
+        [
+          "ch4_mean",
+          51
+        ],
+        [
+          "ch4_std",
+          65
+        ],
+        [
+          "ch4_min",
+          94
+        ],
+        [
+          "ch4_max",
+          58
+        ],
+        [
+          "ch4_p10",
+          59
+        ],
+        [
+          "ch4_p25",
+          73
+        ],
+        [
+          "ch4_p75",
+          47
+        ],
+        [
+          "ch4_p90",
+          51
+        ],
+        [
+          "ch4_iqr",
+          93
+        ],
+        [
+          "ch4_mad",
+          95
+        ],
+        [
+          "ch4_range",
+          87
+        ],
+        [
+          "ch4_cv",
+          59
+        ],
+        [
+          "ch4_skew",
+          137
+        ],
+        [
+          "ch4_kurt",
+          141
+        ],
+        [
+          "ch4_delta_median_r1_r05",
+          81
+        ],
+        [
+          "ch4_delta_median_r2_r1",
+          130
+        ],
+        [
+          "ch4_delta_std_r2_r05",
+          130
+        ],
+        [
+          "cloud_median",
+          111
+        ],
+        [
+          "cloud_mean",
+          62
+        ],
+        [
+          "cloud_std",
+          111
+        ],
+        [
+          "cloud_min",
+          151
+        ],
+        [
+          "cloud_max",
+          103
+        ],
+        [
+          "cloud_p10",
+          129
+        ],
+        [
+          "cloud_p25",
+          104
+        ],
+        [
+          "cloud_p75",
+          76
+        ],
+        [
+          "cloud_p90",
+          77
+        ],
+        [
+          "cloud_iqr",
+          166
+        ],
+        [
+          "cloud_mad",
+          193
+        ],
+        [
+          "cloud_range",
+          122
+        ],
+        [
+          "cloud_cv",
+          206
+        ],
+        [
+          "cloud_skew",
+          262
+        ],
+        [
+          "cloud_kurt",
+          254
+        ],
+        [
+          "cloud_delta_median_r1_r05",
+          256
+        ],
+        [
+          "cloud_delta_median_r2_r1",
+          238
+        ],
+        [
+          "cloud_delta_std_r2_r05",
+          215
+        ],
+        [
+          "o3_median",
+          96
+        ],
+        [
+          "o3_mean",
+          80
+        ],
+        [
+          "o3_std",
+          181
+        ],
+        [
+          "o3_min",
+          122
+        ],
+        [
+          "o3_max",
+          132
+        ],
+        [
+          "o3_p10",
+          102
+        ],
+        [
+          "o3_p25",
+          79
+        ],
+        [
+          "o3_p75",
+          63
+        ],
+        [
+          "o3_p90",
+          87
+        ],
+        [
+          "o3_iqr",
+          275
+        ],
+        [
+          "o3_mad",
+          277
+        ],
+        [
+          "o3_range",
+          245
+        ],
+        [
+          "o3_cv",
+          174
+        ],
+        [
+          "o3_skew",
+          317
+        ],
+        [
+          "o3_kurt",
+          364
+        ],
+        [
+          "o3_delta_median_r1_r05",
+          348
+        ],
+        [
+          "o3_delta_median_r2_r1",
+          327
+        ],
+        [
+          "o3_delta_std_r2_r05",
+          347
+        ],
+        [
+          "nh3_median",
+          141
+        ],
+        [
+          "nh3_mean",
+          96
+        ],
+        [
+          "nh3_std",
+          117
+        ],
+        [
+          "nh3_min",
+          170
+        ],
+        [
+          "nh3_max",
+          150
+        ],
+        [
+          "nh3_p10",
+          124
+        ],
+        [
+          "nh3_p25",
+          101
+        ],
+        [
+          "nh3_p75",
+          119
+        ],
+        [
+          "nh3_p90",
+          135
+        ],
+        [
+          "nh3_iqr",
+          208
+        ],
+        [
+          "nh3_mad",
+          164
+        ],
+        [
+          "nh3_range",
+          122
+        ],
+        [
+          "nh3_cv",
+          309
+        ],
+        [
+          "nh3_skew",
+          449
+        ],
+        [
+          "nh3_kurt",
+          315
+        ],
+        [
+          "nh3_delta_median_r1_r05",
+          0
+        ],
+        [
+          "nh3_delta_median_r2_r1",
+          0
+        ],
+        [
+          "nh3_delta_std_r2_r05",
+          0
+        ]
+      ]
+    },
+    "xgboost": {
+      "metrics": {
+        "rmse": 42.81625680131546,
+        "mae": 26.4756129268481,
+        "r2": 0.6781997104734194,
+        "bias": 2.3426768871175176,
+        "f1_150": 0.7357985646515023,
+        "extreme_rmse": 82.65807244622943,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 8458,
+        "n_predictions": 48390
+      }
+    },
+    "random_forest": {
+      "metrics": {
+        "rmse": 43.428514338031114,
+        "mae": 28.085863794787006,
+        "r2": 0.6689306449685694,
+        "bias": 5.877351505234512,
+        "f1_150": 0.7316517883889522,
+        "extreme_rmse": 81.20221153496459,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 8707,
+        "n_predictions": 48390
+      }
+    },
+    "extra_trees": {
+      "metrics": {
+        "rmse": 43.30737435075224,
+        "mae": 28.0213236362598,
+        "r2": 0.6707750461584051,
+        "bias": 4.931076908959134,
+        "f1_150": 0.7348443638561499,
+        "extreme_rmse": 82.34515721012477,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 8561,
+        "n_predictions": 48390
+      }
+    },
+    "ridge": {
+      "metrics": {
+        "rmse": 2582.676832729667,
+        "mae": 93.99336006466076,
+        "r2": -1169.8713274831607,
+        "bias": -56.54093944071613,
+        "f1_150": 0.7222252641953677,
+        "extreme_rmse": 4361.907097128571,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 10279,
+        "n_predictions": 48390
+      }
+    },
+    "elasticnet": {
+      "metrics": {
+        "rmse": 69.12412060382906,
+        "mae": 36.60027817499066,
+        "r2": 0.1612582219729638,
+        "bias": -2.9504539493106225,
+        "f1_150": 0.6922797676669894,
+        "extreme_rmse": 131.67126402570491,
+        "n_extreme_true": 7984,
+        "n_extreme_pred": 8544,
+        "n_predictions": 48390
+      }
+    }
+  },
+  "do_tuning": false
+}

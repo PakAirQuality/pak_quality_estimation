@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PIPFILE.lock
+
+# Data files
+*.csv
+*.nc
+*.h5
+*.hdf5
+*.parquet
+*.pkl
+*.pickle
+
+# Large model files
+*.joblib
+*.model
+*.weights
+
+# Geospatial data
+*.tif
+*.tiff
+*.geotiff
+*.shp
+*.dbf
+*.shx
+*.prj
+
+# Video files
+*.mp4
+*.avi
+*.mov
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Output directories
+output/
+predictions/
+still_images/
+summary_plots/
+best_model_weight/
+datasets/
+lake/
+
+# Temporary files
+tmp/
+temp/
+
+# Raw data directories (large files)
+extraction_and_preprocessing/downloading_scripts/met_features/Pak_Era5_18-25/
+extraction_and_preprocessing/downloading_scripts/met_features/Pak_Era5_land_18-25/
+extraction_and_preprocessing/downloading_scripts/aod_features/raw_data/
+extraction_and_preprocessing/downloading_scripts/tropomi_features/geoBoundaries-PAK-ADM0-all/
+extraction_and_preprocessing/input_features/exploration_features/
+extraction_and_preprocessing/input_features/met_features/Pak_Era5_18-25/
+extraction_and_preprocessing/input_features/met_features/Pak_Era5_land_18-25/
+extraction_and_preprocessing/input_features/aod_features/data/
+extraction_and_preprocessing/input_features/aod_features/raw_data/
+extraction_and_preprocessing/input_features/tropomi_features/geoBoundaries-PAK-ADM0-all/
+qa_assurance/
+
