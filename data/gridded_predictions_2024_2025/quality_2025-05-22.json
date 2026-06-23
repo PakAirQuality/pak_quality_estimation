@@ -1,0 +1,22 @@
+{
+  "total_features": 305,
+  "missing_features": 0,
+  "available_features": 305,
+  "nan_fraction": 0.0438,
+  "pakistan_cells": 9682,
+  "stage_coverage": {
+    "aod": 1.0,
+    "met": 1.0,
+    "tropomi": 1.0
+  },
+  "stage_nan_fraction": {
+    "aod": 0.0635,
+    "met": 0.0022,
+    "tropomi": 0.0707
+  },
+  "stage_feature_count": {
+    "aod": 6,
+    "met": 119,
+    "tropomi": 180
+  }
+}
