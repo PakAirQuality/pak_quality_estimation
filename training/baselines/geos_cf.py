@@ -6,6 +6,7 @@ Independent chemical transport model baseline for PM2.5 evaluation.
 """
 
 import datetime as dt
+import os
 from pathlib import Path
 from typing import Dict, Optional, Tuple, Union
 
@@ -34,7 +35,7 @@ class GEOSCFBaseline:
     """
 
     RESOLUTION = 0.25  # degrees
-    GCS_PATH_PATTERN = "gs://paqi-raw-hawanama-data/raw/geos_cf_pakistan_2020_2025/PM25/geos_cf_pm25_pakistan_{date}.tif"
+    GCS_PATH_PATTERN = os.environ.get("PAQI_GEOSCF_PATTERN", "gs://your-raw-bucket/raw/geos_cf_pakistan_2020_2025/PM25/geos_cf_pm25_pakistan_{date}.tif")
 
     def __init__(
         self,

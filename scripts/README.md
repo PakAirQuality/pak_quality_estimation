@@ -48,7 +48,7 @@ tmux new -s backfill
    └── paqi_network_daily.csv
 
 2. Process (met, aod, tropomi) → Write to GCS
-   gs://paqi-derived-hawanama-data/station/
+   gs://your-derived-bucket/station/
    ├── met/date=2020-01-01/part-000.parquet
    ├── aod/date=2020-01-01/part-000.parquet
    └── tropomi/date=2020-01-01/part-000.parquet
@@ -66,7 +66,7 @@ python feature_engineering/main_feature_pipeline.py \
   --stages met,aod,tropomi \
   --start $(date -d "yesterday" +%Y-%m-%d) \
   --end $(date -d "yesterday" +%Y-%m-%d) \
-  --store_path gs://paqi-derived-hawanama-data/station
+  --store_path gs://your-derived-bucket/station
 ```
 
 The pipeline automatically skips existing partitions (incremental processing).

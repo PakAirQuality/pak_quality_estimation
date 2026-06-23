@@ -9,7 +9,7 @@ Storage Layout:
 
 Examples:
     Local:  ./feature_store/station/met/date=2025-01-17/part-000.parquet
-    GCS:    gs://paqi-derived-hawanama-data/station/met/date=2025-01-17/part-000.parquet
+    GCS:    gs://your-derived-bucket/station/met/date=2025-01-17/part-000.parquet
 
 Stages:
     - met: Meteorological features
@@ -44,7 +44,7 @@ class StoreConfig:
     partition_format: str = "date=%Y-%m-%d"
 
     # Default GCS paths
-    gcs_bucket: str = "paqi-derived-hawanama-data"
+    gcs_bucket: str = os.environ.get("PAQI_DERIVED_BUCKET", "your-derived-bucket")
     gcs_prefix: str = "station"
 
     def __post_init__(self):
@@ -58,7 +58,7 @@ class StoreConfig:
         return cls(base_path=base_path)
 
     @classmethod
-    def gcs(cls, bucket: str = "paqi-derived-hawanama-data", prefix: str = "station") -> "StoreConfig":
+    def gcs(cls, bucket: str = os.environ.get("PAQI_DERIVED_BUCKET", "your-derived-bucket"), prefix: str = "station") -> "StoreConfig":
         """Create a GCS store config."""
         return cls(
             base_path=f"gs://{bucket}/{prefix}",
@@ -83,7 +83,7 @@ class StoreConfig:
 
         Example:
             >>> config.stage_prefix("met")
-            "gs://paqi-derived-hawanama-data/station/met"
+            "gs://your-derived-bucket/station/met"
         """
         if stage not in VALID_STAGES:
             raise ValueError(f"Invalid stage '{stage}'. Must be one of: {VALID_STAGES}")
@@ -102,7 +102,7 @@ class StoreConfig:
 
         Example:
             >>> config.partition_path("met", date(2025, 1, 17))
-            "gs://paqi-derived-hawanama-data/station/met/date=2025-01-17"
+            "gs://your-derived-bucket/station/met/date=2025-01-17"
         """
         if isinstance(dt, str):
             dt = datetime.strptime(dt, "%Y-%m-%d").date()
@@ -126,7 +126,7 @@ class StoreConfig:
 
         Example:
             >>> config.parquet_path("met", date(2025, 1, 17))
-            "gs://paqi-derived-hawanama-data/station/met/date=2025-01-17/part-000.parquet"
+            "gs://your-derived-bucket/station/met/date=2025-01-17/part-000.parquet"
         """
         return f"{self.partition_path(stage, dt)}/part-{part:03d}.parquet"
 

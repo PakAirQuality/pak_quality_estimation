@@ -254,6 +254,22 @@ Ingestion of satellite/reanalysis inputs requires NASA Earthdata, Google Earth E
 and Copernicus CDS credentials, supplied through environment variables (no secrets are
 stored in this repository).
 
+### Configuration
+
+Object-store locations and credentials are read from environment variables; code
+defaults are neutral placeholders, so set these to your own infrastructure. Copy
+`.env.example` to `.env` and fill in the values:
+
+| Variable | Purpose |
+|---|---|
+| `GCP_PROJECT` | Google Cloud project id |
+| `PAQI_RAW_BUCKET` | raw satellite/station data bucket (e.g. `gs://your-raw-bucket`) |
+| `PAQI_DERIVED_BUCKET` | feature-store bucket |
+| `PAQI_LAKE_PATH` | training data-lake path |
+| `PAQI_GEOSCF_PATTERN` | GEOS-CF baseline raster path pattern |
+| `EARTHDATA_USERNAME` / `EARTHDATA_PASSWORD` | NASA Earthdata (MODIS AOD) |
+| `CDS_API_KEY` | Copernicus CDS (ERA5) |
+
 ---
 
 ## Citation

@@ -14,7 +14,7 @@ Storage Layout:
 
 Examples:
     Local:  derived/feature_store/grid/met/date=2024-03-13/part-000.parquet
-    GCS:    gs://paqi-derived-hawanama-data/grid/met/date=2024-03-13/part-000.parquet
+    GCS:    gs://your-derived-bucket/grid/met/date=2024-03-13/part-000.parquet
 """
 
 from .paths import GridStoreConfig, VALID_STAGES

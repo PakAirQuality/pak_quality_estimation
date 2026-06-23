@@ -34,6 +34,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import logging
 import subprocess
 import sys
@@ -49,7 +50,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # GCS bucket configuration
-GCS_BUCKET = "gs://paqi-raw-hawanama-data"
+GCS_BUCKET = os.environ.get("PAQI_RAW_BUCKET", "gs://your-raw-bucket")
 GCS_RAW = f"{GCS_BUCKET}/raw"
 GCS_HOURLY = f"{GCS_RAW}/station_hourly"
 GCS_DAILY = f"{GCS_RAW}/station_daily"

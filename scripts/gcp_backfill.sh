@@ -20,11 +20,11 @@ set -e  # Exit on error
 # -----------------------------------------------------------------------------
 # Configuration
 # -----------------------------------------------------------------------------
-PROJECT_ID="hawanama-data"
-REGION="asia-south1"
+PROJECT_ID="${PROJECT_ID:-your-gcp-project}"
+REGION="${REGION:-asia-south1}"
 
 # Source buckets (raw data)
-RAW_BUCKET="gs://paqi-raw-hawanama-data"
+RAW_BUCKET="${RAW_BUCKET:-gs://your-raw-bucket}"
 MET_PATH="${RAW_BUCKET}/features_met"
 AOD_PATH="${RAW_BUCKET}/MCD19A2.061"
 TROPOMI_PATH="${RAW_BUCKET}/tropomi_pakistan_2020_2025"
@@ -32,7 +32,7 @@ GEOS_CF_PATH="${RAW_BUCKET}/geos_cf_pakistan_2020_2025"
 OBSERVATIONS_PATH="${RAW_BUCKET}/paqi_network_daily.csv"
 
 # Destination bucket (derived/processed data)
-DERIVED_BUCKET="gs://paqi-derived-hawanama-data"
+DERIVED_BUCKET="${DERIVED_BUCKET:-gs://your-derived-bucket}"
 STORE_PATH="${DERIVED_BUCKET}/station"
 
 # Local SSD paths (for fast I/O)

@@ -15,6 +15,7 @@ Usage:
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -35,7 +36,7 @@ from training.baselines import (
 from training.utils.trainer import load_master_from_lake
 
 DEFAULT_LAKE_PATH = "feature_engineering/output/master_lake"
-GCS_LAKE_PATH = "gs://paqi-features-hawanama-data/master_training/master"
+GCS_LAKE_PATH = os.environ.get("PAQI_LAKE_PATH", "gs://your-features-bucket/master_training/master")
 
 
 def load_data():

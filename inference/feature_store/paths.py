@@ -9,7 +9,7 @@ Storage Layout:
 
 Examples:
     Local:  derived/feature_store/grid/met/date=2024-03-13/part-000.parquet
-    GCS:    gs://paqi-derived-hawanama-data/grid/met/date=2024-03-13/part-000.parquet
+    GCS:    gs://your-derived-bucket/grid/met/date=2024-03-13/part-000.parquet
 
 Stages:
     - met: Meteorological features
@@ -47,7 +47,7 @@ class GridStoreConfig:
     partition_format: str = "date=%Y-%m-%d"
 
     # Default GCS paths
-    gcs_bucket: str = "paqi-derived-hawanama-data"
+    gcs_bucket: str = os.environ.get("PAQI_DERIVED_BUCKET", "your-derived-bucket")
     gcs_prefix: str = "grid"
 
     # Grid-specific attributes
@@ -65,7 +65,7 @@ class GridStoreConfig:
         return cls(base_path=base_path)
 
     @classmethod
-    def gcs(cls, bucket: str = "paqi-derived-hawanama-data", prefix: str = "grid") -> "GridStoreConfig":
+    def gcs(cls, bucket: str = os.environ.get("PAQI_DERIVED_BUCKET", "your-derived-bucket"), prefix: str = "grid") -> "GridStoreConfig":
         """Create a GCS store config."""
         return cls(
             base_path=f"gs://{bucket}/{prefix}",
