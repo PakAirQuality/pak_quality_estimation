@@ -17,10 +17,14 @@ Earth Engine, and Copernicus CDS credentials, supplied via environment variables
 
 - Daily gridded PM2.5 prediction fields (0.1° national grid), as Cloud Optimized
   GeoTIFFs (raw + Gaussian-smoothed) with per-day metadata.
-- A derived station-day validation table (observed vs. estimated daily PM2.5 with
-  support-regime flags) sufficient to reproduce the paper's headline metrics.
+- A derived station-day validation table for the held-out 2025 test year — observed
+  vs. with-history vs. no-history daily PM2.5 — at
+  `validation/pm25_2025_station_day_validation.csv` (see `validation/README.md`). It
+  reproduces the paper's headline numbers (with-history MAE 14.3 / F1@150 0.838;
+  no-history MAE 23.2) and is anonymised (no coordinates, device ids, or site names).
 
-These are distributed with the archived release (Zenodo DOI: TBD).
+The gridded fields are distributed with the archived release (Zenodo DOI: TBD); the
+2025 validation table is included in this repository under `validation/`.
 
 ## 3. Restricted stream
 
