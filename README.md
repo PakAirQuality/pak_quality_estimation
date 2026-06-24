@@ -6,8 +6,7 @@
 
 This repository is the public code release accompanying the manuscript:
 
-> **Recent monitor history improves daily PM2.5 estimation but weakens national
-> transfer under sparse monitoring: a support-aware model for Pakistan.**
+> **Daily PM2.5 Estimation under Sparse Monitoring: A Support-Aware Framework for Pakistan.**
 > Rehan Ahmad, Mahad Naveed, Abid Omar (Pakistan Air Quality Initiative, PAQI).
 > Submitted to *Atmospheric Chemistry and Physics* (ACP).
 

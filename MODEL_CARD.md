@@ -42,8 +42,8 @@ winter (MAE 30.6) when severe smog episodes occur.
 
 ## Relationship to the ACP paper
 
-The manuscript *"Recent monitor history improves daily PM2.5 estimation but weakens
-national transfer under sparse monitoring: a support-aware model for Pakistan"*
+The manuscript *"Daily PM2.5 Estimation under Sparse Monitoring: A Support-Aware
+Framework for Pakistan"*
 studies a **support-aware temporal-dropout** training strategy: the full recent
 monitor-history feature block is withheld for a random subset of training rows so a
 single model operates both **with** and **without** local PM2.5 history. The paper's
