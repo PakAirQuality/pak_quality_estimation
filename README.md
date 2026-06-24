@@ -1,7 +1,6 @@
 # pak_quality_estimation
 
-<!-- DOI badge: replace once the Zenodo release is minted (see ZENODO.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20824536.svg)](https://doi.org/10.5281/zenodo.20824536)
 
 **Daily gridded PM2.5 estimation for Pakistan at 0.1° resolution using a LightGBM model trained on satellite, meteorological, and ground-station data.**
 
@@ -231,7 +230,7 @@ A gradient-boosted decision tree trained on station-level observations (2020-202
 ## Usage
 
 Trained model weights are **not** committed (see `.gitignore`); they are distributed
-with the archived release (Zenodo DOI: TBD; see `ZENODO.md`) or available on request.
+with the archived release (Zenodo DOI [10.5281/zenodo.20824536](https://doi.org/10.5281/zenodo.20824536); see `ZENODO.md`) or available on request.
 The daily gridded 2024–2025 PM2.5 product is included under
 `data/gridded_predictions_2024_2025/`, and the held-out 2025 validation table under
 `validation/`.

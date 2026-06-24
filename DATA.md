@@ -25,7 +25,8 @@ Earth Engine, and Copernicus CDS credentials, supplied via environment variables
   no-history MAE 23.2) and is anonymised (no coordinates, device ids, or site names).
 
 Both derived products are included in this repository and are captured in the
-Zenodo archive created from the GitHub release (DOI: TBD; see `ZENODO.md`).
+Zenodo archive created from the GitHub release
+(DOI [10.5281/zenodo.20824536](https://doi.org/10.5281/zenodo.20824536); see `ZENODO.md`).
 
 ## 3. Restricted stream
 

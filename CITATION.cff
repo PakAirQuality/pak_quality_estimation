@@ -19,7 +19,7 @@ authors:
     email: abidomar@pakairquality.com
 license: MIT
 repository-code: "https://github.com/PakAirQuality/pak_quality_estimation"
-# doi: TBD  # Zenodo DOI, minted at submission
+doi: "10.5281/zenodo.20824536"
 keywords:
   - PM2.5
   - air quality estimation
