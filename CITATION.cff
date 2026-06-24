@@ -17,6 +17,7 @@ authors:
     family-names: Omar
     affiliation: "Pakistan Air Quality Initiative (PAQI), Karachi, Pakistan"
     email: abidomar@pakairquality.com
+    orcid: "https://orcid.org/0000-0002-6983-6696"
 license: MIT
 repository-code: "https://github.com/PakAirQuality/pak_quality_estimation"
 doi: "10.5281/zenodo.20824536"
