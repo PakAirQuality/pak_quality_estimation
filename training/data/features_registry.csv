@@ -1,0 +1,631 @@
+column_name,stage,category,description,data_type,date_added,used_in_training
+t2m,met,feature,Temperature at 2m height,float64,2026-01-06 02:43:14,1
+d2m,met,feature,2m dewpoint temperature,float64,2026-01-06 02:43:14,1
+u10,met,feature,10m u-component of wind,float64,2026-01-06 02:43:14,1
+v10,met,feature,10m v-component of wind,float64,2026-01-06 02:43:14,1
+sp,met,feature,Surface pressure,float64,2026-01-06 02:43:14,1
+u100,met,feature,Meteorological variable: u100,float64,2026-01-06 02:43:14,1
+v100,met,feature,Meteorological variable: v100,float64,2026-01-06 02:43:14,1
+blh,met,feature,Boundary layer height,float64,2026-01-06 02:43:14,1
+msl,met,feature,Meteorological variable: msl,float64,2026-01-06 02:43:14,1
+tcc,met,feature,Meteorological variable: tcc,float64,2026-01-06 02:43:14,1
+RH,met,feature,Relative humidity,float64,2026-01-06 02:43:14,1
+q,met,feature,Meteorological variable: q,float64,2026-01-06 02:43:14,1
+VPD,met,feature,Vapor pressure deficit,float64,2026-01-06 02:43:14,1
+dT,met,feature,Meteorological variable: dT,float64,2026-01-06 02:43:14,1
+theta,met,feature,Meteorological variable: theta,float64,2026-01-06 02:43:14,1
+WS10,met,feature,Wind speed at 10m height,float64,2026-01-06 02:43:14,1
+WD10,met,feature,Wind direction at 10m height,float64,2026-01-06 02:43:14,1
+WS100,met,feature,Meteorological variable: WS100,float64,2026-01-06 02:43:14,1
+WD100,met,feature,Meteorological variable: WD100,float64,2026-01-06 02:43:14,1
+dWS,met,feature,Meteorological variable: dWS,float64,2026-01-06 02:43:14,1
+dWD,met,feature,Meteorological variable: dWD,float64,2026-01-06 02:43:14,1
+VC,met,feature,Vegetation condition index,float64,2026-01-06 02:43:14,1
+VCi,met,feature,Meteorological variable: VCi,float64,2026-01-06 02:43:14,1
+BLH_tend,met,feature,Meteorological variable: BLH (tend aggregation),float64,2026-01-06 02:43:14,1
+CLR,met,feature,Meteorological variable: CLR,float64,2026-01-06 02:43:14,1
+MSLP_tend,met,feature,Meteorological variable: MSLP (tend aggregation),float64,2026-01-06 02:43:14,1
+SP_tend,met,feature,Meteorological variable: SP (tend aggregation),float64,2026-01-06 02:43:14,1
+Stagnant,met,feature,Meteorological variable: Stagnant,float64,2026-01-06 02:43:14,1
+HighRH,met,feature,Meteorological variable: HighRH,float64,2026-01-06 02:43:14,1
+WS10_daily_mean,met,feature,Wind speed at 10m height (daily_mean aggregation),float64,2026-01-06 02:43:14,1
+WS10_daily_max,met,feature,Wind speed at 10m height (daily_max aggregation),float64,2026-01-06 02:43:14,1
+WS10_daily_min,met,feature,Wind speed at 10m height (daily_min aggregation),float64,2026-01-06 02:43:14,1
+blh_daily_mean,met,feature,Boundary layer height (daily_mean aggregation),float64,2026-01-06 02:43:14,1
+blh_daily_max,met,feature,Boundary layer height (daily_max aggregation),float64,2026-01-06 02:43:14,1
+blh_daily_min,met,feature,Boundary layer height (daily_min aggregation),float64,2026-01-06 02:43:14,1
+RH_daily_mean,met,feature,Relative humidity (daily_mean aggregation),float64,2026-01-06 02:43:14,1
+RH_daily_max,met,feature,Relative humidity (daily_max aggregation),float64,2026-01-06 02:43:14,1
+RH_daily_min,met,feature,Relative humidity (daily_min aggregation),float64,2026-01-06 02:43:14,1
+t2m_daily_mean,met,feature,Temperature at 2m height (daily_mean aggregation),float64,2026-01-06 02:43:14,1
+t2m_daily_max,met,feature,Temperature at 2m height (daily_max aggregation),float64,2026-01-06 02:43:14,1
+t2m_daily_min,met,feature,Temperature at 2m height (daily_min aggregation),float64,2026-01-06 02:43:14,1
+VPD_daily_mean,met,feature,Vapor pressure deficit (daily_mean aggregation),float64,2026-01-06 02:43:14,1
+VPD_daily_max,met,feature,Vapor pressure deficit (daily_max aggregation),float64,2026-01-06 02:43:14,1
+VPD_daily_min,met,feature,Vapor pressure deficit (daily_min aggregation),float64,2026-01-06 02:43:14,1
+VC_daily_mean,met,feature,Vegetation condition index (daily_mean aggregation),float64,2026-01-06 02:43:14,1
+VC_daily_max,met,feature,Vegetation condition index (daily_max aggregation),float64,2026-01-06 02:43:14,1
+VC_daily_min,met,feature,Vegetation condition index (daily_min aggregation),float64,2026-01-06 02:43:14,1
+doy_sin,met,feature,Seasonal encoding: doy_sin,float64,2026-01-06 02:43:14,1
+doy_cos,met,feature,Seasonal encoding: doy_cos,float64,2026-01-06 02:43:14,1
+doy_sin_2,met,feature,Seasonal encoding: doy_sin_2,float64,2026-01-06 02:43:14,1
+doy_cos_2,met,feature,Seasonal encoding: doy_cos_2,float64,2026-01-06 02:43:14,1
+doy_sin_3,met,feature,Seasonal encoding: doy_sin_3,float64,2026-01-06 02:43:14,1
+doy_cos_3,met,feature,Seasonal encoding: doy_cos_3,float64,2026-01-06 02:43:14,1
+heating_season_flag,met,feature,Seasonal indicator: heating_season_flag,int8,2026-01-06 02:43:14,1
+burning_season_flag,met,feature,Seasonal indicator: burning_season_flag,int8,2026-01-06 02:43:14,1
+WS10_lag1d,met,feature,Lagged feature: WS10_lag1d,float64,2026-01-06 02:43:14,1
+WS10_lag3d,met,feature,Lagged feature: WS10_lag3d,float64,2026-01-06 02:43:14,1
+WS10_rollmean_3d,met,feature,Rolling window feature: WS10_rollmean_3d,float64,2026-01-06 02:43:14,1
+WS10_rollstd_3d,met,feature,Rolling window feature: WS10_rollstd_3d,float64,2026-01-06 02:43:14,1
+WS10_rollmin_7d,met,feature,Rolling window feature: WS10_rollmin_7d,float64,2026-01-06 02:43:14,1
+WS10_rollmax_7d,met,feature,Rolling window feature: WS10_rollmax_7d,float64,2026-01-06 02:43:14,1
+calm3_count,met,feature,Low wind condition feature: calm3_count,float64,2026-01-06 02:43:14,1
+calm3_flag,met,feature,Lagged feature: calm3_flag,int8,2026-01-06 02:43:14,1
+calm7_count,met,feature,Low wind condition feature: calm7_count,float64,2026-01-06 02:43:14,1
+calm7_flag,met,feature,Lagged feature: calm7_flag,int8,2026-01-06 02:43:14,1
+blh_lag1d,met,feature,Lagged feature: blh_lag1d,float64,2026-01-06 02:43:14,1
+blh_lag3d,met,feature,Lagged feature: blh_lag3d,float64,2026-01-06 02:43:14,1
+blh_rollmean_3d,met,feature,Rolling window feature: blh_rollmean_3d,float64,2026-01-06 02:43:14,1
+blh_rollmin_7d,met,feature,Rolling window feature: blh_rollmin_7d,float64,2026-01-06 02:43:14,1
+blh_rollmean_7d,met,feature,Rolling window feature: blh_rollmean_7d,float64,2026-01-06 02:43:14,1
+blh_anom_7d,met,feature,Anomaly feature: blh_anom_7d,float64,2026-01-06 02:43:14,1
+blh_rollmean_14d,met,feature,Rolling window feature: blh_rollmean_14d,float64,2026-01-06 02:43:14,1
+blh_anom_14d,met,feature,Anomaly feature: blh_anom_14d,float64,2026-01-06 02:43:14,1
+RH_rollmean_3d,met,feature,Rolling window feature: RH_rollmean_3d,float64,2026-01-06 02:43:14,1
+RH_rollmax_7d,met,feature,Rolling window feature: RH_rollmax_7d,float64,2026-01-06 02:43:14,1
+RH_rollmean_7d,met,feature,Rolling window feature: RH_rollmean_7d,float64,2026-01-06 02:43:14,1
+RH_anom_7d,met,feature,Anomaly feature: RH_anom_7d,float64,2026-01-06 02:43:14,1
+RH_rollstd_7d,met,feature,Rolling window feature: RH_rollstd_7d,float64,2026-01-06 02:43:14,1
+VPD_rollmean_3d,met,feature,Rolling window feature: VPD_rollmean_3d,float64,2026-01-06 02:43:14,1
+VPD_rollmean_7d,met,feature,Rolling window feature: VPD_rollmean_7d,float64,2026-01-06 02:43:14,1
+VC_rollmean_3d,met,feature,Rolling window feature: VC_rollmean_3d,float64,2026-01-06 02:43:14,1
+VC_rollmin_7d,met,feature,Rolling window feature: VC_rollmin_7d,float64,2026-01-06 02:43:14,1
+VC_rollmean_7d,met,feature,Rolling window feature: VC_rollmean_7d,float64,2026-01-06 02:43:14,1
+VC_anom_7d,met,feature,Anomaly feature: VC_anom_7d,float64,2026-01-06 02:43:14,1
+VC_rollmean_14d,met,feature,Rolling window feature: VC_rollmean_14d,float64,2026-01-06 02:43:14,1
+VC_anom_14d,met,feature,Anomaly feature: VC_anom_14d,float64,2026-01-06 02:43:14,1
+stagnant3_count,met,feature,Meteorological variable: stagnant3 (count aggregation),float64,2026-01-06 02:43:14,1
+stagnant3_flag,met,feature,Lagged feature: stagnant3_flag,int8,2026-01-06 02:43:14,1
+stagnant7_count,met,feature,Meteorological variable: stagnant7 (count aggregation),float64,2026-01-06 02:43:14,1
+stagnant7_flag,met,feature,Lagged feature: stagnant7_flag,int8,2026-01-06 02:43:14,1
+WD10_sin,met,feature,Wind direction at 10m height (sin aggregation),float64,2026-01-06 02:43:14,1
+WD10_cos,met,feature,Wind direction at 10m height (cos aggregation),float64,2026-01-06 02:43:14,1
+WD10_sin_rm_7d,met,feature,Wind direction at 10m height (sin_rm_7d aggregation),float64,2026-01-06 02:43:14,1
+WD10_cos_rm_7d,met,feature,Wind direction at 10m height (cos_rm_7d aggregation),float64,2026-01-06 02:43:14,1
+WD10_var_7d,met,feature,Wind direction at 10m height (var_7d aggregation),float64,2026-01-06 02:43:14,1
+WD10_sin_rm_14d,met,feature,Wind direction at 10m height (sin_rm_14d aggregation),float64,2026-01-06 02:43:14,1
+WD10_cos_rm_14d,met,feature,Wind direction at 10m height (cos_rm_14d aggregation),float64,2026-01-06 02:43:14,1
+WD10_var_14d,met,feature,Wind direction at 10m height (var_14d aggregation),float64,2026-01-06 02:43:14,1
+dWS_abs,met,feature,Meteorological variable: dWS (abs aggregation),float64,2026-01-06 02:43:14,1
+dWS_rollmean_3d,met,feature,Rolling window feature: dWS_rollmean_3d,float64,2026-01-06 02:43:14,1
+dWS_rollstd_3d,met,feature,Rolling window feature: dWS_rollstd_3d,float64,2026-01-06 02:43:14,1
+dWD_abs,met,feature,Meteorological variable: dWD (abs aggregation),float64,2026-01-06 02:43:14,1
+dWD_rollstd_3d,met,feature,Rolling window feature: dWD_rollstd_3d,float64,2026-01-06 02:43:14,1
+BLH_tend_rollmean_3d,met,feature,Rolling window feature: BLH_tend_rollmean_3d,float64,2026-01-06 02:43:14,1
+BLH_tend_rollstd_3d,met,feature,Rolling window feature: BLH_tend_rollstd_3d,float64,2026-01-06 02:43:14,1
+BLH_tend_rollmean_7d,met,feature,Rolling window feature: BLH_tend_rollmean_7d,float64,2026-01-06 02:43:14,1
+BLH_tend_rollstd_7d,met,feature,Rolling window feature: BLH_tend_rollstd_7d,float64,2026-01-06 02:43:14,1
+MSLP_tend_rollmean_3d,met,feature,Rolling window feature: MSLP_tend_rollmean_3d,float64,2026-01-06 02:43:14,1
+MSLP_tend_rollstd_3d,met,feature,Rolling window feature: MSLP_tend_rollstd_3d,float64,2026-01-06 02:43:14,1
+MSLP_tend_rollmean_7d,met,feature,Rolling window feature: MSLP_tend_rollmean_7d,float64,2026-01-06 02:43:14,1
+MSLP_tend_rollstd_7d,met,feature,Rolling window feature: MSLP_tend_rollstd_7d,float64,2026-01-06 02:43:14,1
+SP_tend_rollmean_3d,met,feature,Rolling window feature: SP_tend_rollmean_3d,float64,2026-01-06 02:43:14,1
+SP_tend_rollstd_3d,met,feature,Rolling window feature: SP_tend_rollstd_3d,float64,2026-01-06 02:43:14,1
+SP_tend_rollmean_7d,met,feature,Rolling window feature: SP_tend_rollmean_7d,float64,2026-01-06 02:43:14,1
+SP_tend_rollstd_7d,met,feature,Rolling window feature: SP_tend_rollstd_7d,float64,2026-01-06 02:43:14,1
+dT_rollmean_3d,met,feature,Rolling window feature: dT_rollmean_3d,float64,2026-01-06 02:43:14,1
+dT_rollstd_3d,met,feature,Rolling window feature: dT_rollstd_3d,float64,2026-01-06 02:43:14,1
+dT_rollmean_7d,met,feature,Rolling window feature: dT_rollmean_7d,float64,2026-01-06 02:43:14,1
+dT_rollstd_7d,met,feature,Rolling window feature: dT_rollstd_7d,float64,2026-01-06 02:43:14,1
+pm25_daily_mean,met,metadata,Meteorological metadata: pm25_daily_mean,float64,2026-01-06 02:43:14,0
+grid_lat,met,metadata,Meteorological metadata: grid_lat,float64,2026-01-06 02:43:14,0
+grid_lon,met,metadata,Meteorological metadata: grid_lon,float64,2026-01-06 02:43:14,0
+grid_dist_km,met,metadata,Meteorological metadata: grid_dist_km,float32,2026-01-06 02:43:14,0
+sample_lat,met,metadata,Meteorological metadata: sample_lat,float64,2026-01-06 02:43:14,0
+sample_lon,met,metadata,Meteorological metadata: sample_lon,float64,2026-01-06 02:43:14,0
+snapped_flag,met,metadata,Meteorological metadata: snapped_flag,int8,2026-01-06 02:43:14,0
+snap_dist_km,met,metadata,Meteorological metadata: snap_dist_km,float32,2026-01-06 02:43:14,0
+sample_grid_lat,met,metadata,Meteorological metadata: sample_grid_lat,float64,2026-01-06 02:43:14,0
+sample_grid_lon,met,metadata,Meteorological metadata: sample_grid_lon,float64,2026-01-06 02:43:14,0
+sample_grid_dist_km,met,metadata,Meteorological metadata: sample_grid_dist_km,float32,2026-01-06 02:43:14,0
+agg_snapped_flag,met,metadata,Meteorological metadata: agg_snapped_flag,int8,2026-01-06 02:43:14,0
+agg_snap_dist_km,met,metadata,Meteorological metadata: agg_snap_dist_km,float32,2026-01-06 02:43:14,0
+day_of_year,met,metadata,Meteorological metadata: day_of_year,int32,2026-01-06 02:43:14,0
+month,met,metadata,Meteorological metadata: month,int32,2026-01-06 02:43:14,0
+dt_days,met,metadata,Meteorological metadata: dt_days,float64,2026-01-06 02:43:14,0
+optical_depth_047,aod,feature,aod feature: optical_depth_047,float64,2026-01-06 03:19:53,1
+optical_depth_055,aod,feature,aod feature: optical_depth_055,float64,2026-01-06 03:19:53,1
+aod_uncertainty,aod,feature,aod feature: aod_uncertainty,float64,2026-01-06 03:19:53,1
+qa_cloudmask,aod,feature,aod feature: qa_cloudmask,float64,2026-01-06 03:19:53,1
+qa_adjacency,aod,feature,aod feature: qa_adjacency,float64,2026-01-06 03:19:53,1
+qa_aod,aod,feature,aod feature: qa_aod,float64,2026-01-06 03:19:53,1
+qa_n_pixels,aod,metadata,aod metadata: qa_n_pixels,float64,2026-01-06 03:19:53,0
+aod_total_valid_pixels,aod,metadata,aod metadata: aod_total_valid_pixels,int64,2026-01-06 03:19:53,0
+aod_files_used,aod,metadata,aod metadata: aod_files_used,int64,2026-01-06 03:19:53,0
+aod_window_size_used,aod,metadata,aod metadata: aod_window_size_used,float64,2026-01-06 03:19:53,0
+aod_n_hdf_files,aod,metadata,aod metadata: aod_n_hdf_files,int64,2026-01-06 03:19:53,0
+aod_hdf_tiles_used,aod,metadata,aod metadata: aod_hdf_tiles_used,object,2026-01-06 03:19:53,0
+no2_median,tropomi,feature,tropomi feature: no2_median,float64,2026-01-06 03:29:22,1
+no2_mean,tropomi,feature,tropomi feature: no2_mean,float64,2026-01-06 03:29:22,1
+no2_std,tropomi,feature,tropomi feature: no2_std,float64,2026-01-06 03:29:22,1
+no2_min,tropomi,feature,tropomi feature: no2_min,float64,2026-01-06 03:29:22,1
+no2_max,tropomi,feature,tropomi feature: no2_max,float64,2026-01-06 03:29:22,1
+no2_p10,tropomi,feature,tropomi feature: no2_p10,float64,2026-01-06 03:29:22,1
+no2_p25,tropomi,feature,tropomi feature: no2_p25,float64,2026-01-06 03:29:22,1
+no2_p75,tropomi,feature,tropomi feature: no2_p75,float64,2026-01-06 03:29:22,1
+no2_p90,tropomi,feature,tropomi feature: no2_p90,float64,2026-01-06 03:29:22,1
+no2_iqr,tropomi,feature,tropomi feature: no2_iqr,float64,2026-01-06 03:29:22,1
+no2_mad,tropomi,feature,tropomi feature: no2_mad,float64,2026-01-06 03:29:22,1
+no2_range,tropomi,feature,tropomi feature: no2_range,float64,2026-01-06 03:29:22,1
+no2_cv,tropomi,feature,tropomi feature: no2_cv,float64,2026-01-06 03:29:22,1
+no2_skew,tropomi,feature,tropomi feature: no2_skew,float64,2026-01-06 03:29:22,1
+no2_kurt,tropomi,feature,tropomi feature: no2_kurt,float64,2026-01-06 03:29:22,1
+no2_delta_median_r1_r05,tropomi,feature,tropomi feature: no2_delta_median_r1_r05,float64,2026-01-06 03:29:22,1
+no2_delta_median_r2_r1,tropomi,feature,tropomi feature: no2_delta_median_r2_r1,float64,2026-01-06 03:29:22,1
+no2_delta_std_r2_r05,tropomi,feature,tropomi feature: no2_delta_std_r2_r05,float64,2026-01-06 03:29:22,1
+so2_median,tropomi,feature,tropomi feature: so2_median,float64,2026-01-06 03:29:22,1
+so2_mean,tropomi,feature,tropomi feature: so2_mean,float64,2026-01-06 03:29:22,1
+so2_std,tropomi,feature,tropomi feature: so2_std,float64,2026-01-06 03:29:22,1
+so2_min,tropomi,feature,tropomi feature: so2_min,float64,2026-01-06 03:29:22,1
+so2_max,tropomi,feature,tropomi feature: so2_max,float64,2026-01-06 03:29:22,1
+so2_p10,tropomi,feature,tropomi feature: so2_p10,float64,2026-01-06 03:29:22,1
+so2_p25,tropomi,feature,tropomi feature: so2_p25,float64,2026-01-06 03:29:22,1
+so2_p75,tropomi,feature,tropomi feature: so2_p75,float64,2026-01-06 03:29:22,1
+so2_p90,tropomi,feature,tropomi feature: so2_p90,float64,2026-01-06 03:29:22,1
+so2_iqr,tropomi,feature,tropomi feature: so2_iqr,float64,2026-01-06 03:29:22,1
+so2_mad,tropomi,feature,tropomi feature: so2_mad,float64,2026-01-06 03:29:22,1
+so2_range,tropomi,feature,tropomi feature: so2_range,float64,2026-01-06 03:29:22,1
+so2_cv,tropomi,feature,tropomi feature: so2_cv,float64,2026-01-06 03:29:22,1
+so2_skew,tropomi,feature,tropomi feature: so2_skew,float64,2026-01-06 03:29:22,1
+so2_kurt,tropomi,feature,tropomi feature: so2_kurt,float64,2026-01-06 03:29:22,1
+so2_delta_median_r1_r05,tropomi,feature,tropomi feature: so2_delta_median_r1_r05,float64,2026-01-06 03:29:22,1
+so2_delta_median_r2_r1,tropomi,feature,tropomi feature: so2_delta_median_r2_r1,float64,2026-01-06 03:29:22,1
+so2_delta_std_r2_r05,tropomi,feature,tropomi feature: so2_delta_std_r2_r05,float64,2026-01-06 03:29:22,1
+co_median,tropomi,feature,tropomi feature: co_median,float64,2026-01-06 03:29:22,1
+co_mean,tropomi,feature,tropomi feature: co_mean,float64,2026-01-06 03:29:22,1
+co_std,tropomi,feature,tropomi feature: co_std,float64,2026-01-06 03:29:22,1
+co_min,tropomi,feature,tropomi feature: co_min,float64,2026-01-06 03:29:22,1
+co_max,tropomi,feature,tropomi feature: co_max,float64,2026-01-06 03:29:22,1
+co_p10,tropomi,feature,tropomi feature: co_p10,float64,2026-01-06 03:29:22,1
+co_p25,tropomi,feature,tropomi feature: co_p25,float64,2026-01-06 03:29:22,1
+co_p75,tropomi,feature,tropomi feature: co_p75,float64,2026-01-06 03:29:22,1
+co_p90,tropomi,feature,tropomi feature: co_p90,float64,2026-01-06 03:29:22,1
+co_iqr,tropomi,feature,tropomi feature: co_iqr,float64,2026-01-06 03:29:22,1
+co_mad,tropomi,feature,tropomi feature: co_mad,float64,2026-01-06 03:29:22,1
+co_range,tropomi,feature,tropomi feature: co_range,float64,2026-01-06 03:29:22,1
+co_cv,tropomi,feature,tropomi feature: co_cv,float64,2026-01-06 03:29:22,1
+co_skew,tropomi,feature,tropomi feature: co_skew,float64,2026-01-06 03:29:22,1
+co_kurt,tropomi,feature,tropomi feature: co_kurt,float64,2026-01-06 03:29:22,1
+co_delta_median_r1_r05,tropomi,feature,tropomi feature: co_delta_median_r1_r05,float64,2026-01-06 03:29:22,1
+co_delta_median_r2_r1,tropomi,feature,tropomi feature: co_delta_median_r2_r1,float64,2026-01-06 03:29:22,1
+co_delta_std_r2_r05,tropomi,feature,tropomi feature: co_delta_std_r2_r05,float64,2026-01-06 03:29:22,1
+hcho_median,tropomi,feature,tropomi feature: hcho_median,float64,2026-01-06 03:29:22,1
+hcho_mean,tropomi,feature,tropomi feature: hcho_mean,float64,2026-01-06 03:29:22,1
+hcho_std,tropomi,feature,tropomi feature: hcho_std,float64,2026-01-06 03:29:22,1
+hcho_min,tropomi,feature,tropomi feature: hcho_min,float64,2026-01-06 03:29:22,1
+hcho_max,tropomi,feature,tropomi feature: hcho_max,float64,2026-01-06 03:29:22,1
+hcho_p10,tropomi,feature,tropomi feature: hcho_p10,float64,2026-01-06 03:29:22,1
+hcho_p25,tropomi,feature,tropomi feature: hcho_p25,float64,2026-01-06 03:29:22,1
+hcho_p75,tropomi,feature,tropomi feature: hcho_p75,float64,2026-01-06 03:29:22,1
+hcho_p90,tropomi,feature,tropomi feature: hcho_p90,float64,2026-01-06 03:29:22,1
+hcho_iqr,tropomi,feature,tropomi feature: hcho_iqr,float64,2026-01-06 03:29:22,1
+hcho_mad,tropomi,feature,tropomi feature: hcho_mad,float64,2026-01-06 03:29:22,1
+hcho_range,tropomi,feature,tropomi feature: hcho_range,float64,2026-01-06 03:29:22,1
+hcho_cv,tropomi,feature,tropomi feature: hcho_cv,float64,2026-01-06 03:29:22,1
+hcho_skew,tropomi,feature,tropomi feature: hcho_skew,float64,2026-01-06 03:29:22,1
+hcho_kurt,tropomi,feature,tropomi feature: hcho_kurt,float64,2026-01-06 03:29:22,1
+hcho_delta_median_r1_r05,tropomi,feature,tropomi feature: hcho_delta_median_r1_r05,float64,2026-01-06 03:29:22,1
+hcho_delta_median_r2_r1,tropomi,feature,tropomi feature: hcho_delta_median_r2_r1,float64,2026-01-06 03:29:22,1
+hcho_delta_std_r2_r05,tropomi,feature,tropomi feature: hcho_delta_std_r2_r05,float64,2026-01-06 03:29:22,1
+aai_median,tropomi,feature,tropomi feature: aai_median,float64,2026-01-06 03:29:22,1
+aai_mean,tropomi,feature,tropomi feature: aai_mean,float64,2026-01-06 03:29:22,1
+aai_std,tropomi,feature,tropomi feature: aai_std,float64,2026-01-06 03:29:22,1
+aai_min,tropomi,feature,tropomi feature: aai_min,float64,2026-01-06 03:29:22,1
+aai_max,tropomi,feature,tropomi feature: aai_max,float64,2026-01-06 03:29:22,1
+aai_p10,tropomi,feature,tropomi feature: aai_p10,float64,2026-01-06 03:29:22,1
+aai_p25,tropomi,feature,tropomi feature: aai_p25,float64,2026-01-06 03:29:23,1
+aai_p75,tropomi,feature,tropomi feature: aai_p75,float64,2026-01-06 03:29:23,1
+aai_p90,tropomi,feature,tropomi feature: aai_p90,float64,2026-01-06 03:29:23,1
+aai_iqr,tropomi,feature,tropomi feature: aai_iqr,float64,2026-01-06 03:29:23,1
+aai_mad,tropomi,feature,tropomi feature: aai_mad,float64,2026-01-06 03:29:23,1
+aai_range,tropomi,feature,tropomi feature: aai_range,float64,2026-01-06 03:29:23,1
+aai_cv,tropomi,feature,tropomi feature: aai_cv,float64,2026-01-06 03:29:23,1
+aai_skew,tropomi,feature,tropomi feature: aai_skew,float64,2026-01-06 03:29:23,1
+aai_kurt,tropomi,feature,tropomi feature: aai_kurt,float64,2026-01-06 03:29:23,1
+aai_delta_median_r1_r05,tropomi,feature,tropomi feature: aai_delta_median_r1_r05,float64,2026-01-06 03:29:23,1
+aai_delta_median_r2_r1,tropomi,feature,tropomi feature: aai_delta_median_r2_r1,float64,2026-01-06 03:29:23,1
+aai_delta_std_r2_r05,tropomi,feature,tropomi feature: aai_delta_std_r2_r05,float64,2026-01-06 03:29:23,1
+alh_median,tropomi,feature,tropomi feature: alh_median,float64,2026-01-06 03:29:23,1
+alh_mean,tropomi,feature,tropomi feature: alh_mean,float64,2026-01-06 03:29:23,1
+alh_std,tropomi,feature,tropomi feature: alh_std,float64,2026-01-06 03:29:23,1
+alh_min,tropomi,feature,tropomi feature: alh_min,float64,2026-01-06 03:29:23,1
+alh_max,tropomi,feature,tropomi feature: alh_max,float64,2026-01-06 03:29:23,1
+alh_p10,tropomi,feature,tropomi feature: alh_p10,float64,2026-01-06 03:29:23,1
+alh_p25,tropomi,feature,tropomi feature: alh_p25,float64,2026-01-06 03:29:23,1
+alh_p75,tropomi,feature,tropomi feature: alh_p75,float64,2026-01-06 03:29:23,1
+alh_p90,tropomi,feature,tropomi feature: alh_p90,float64,2026-01-06 03:29:23,1
+alh_iqr,tropomi,feature,tropomi feature: alh_iqr,float64,2026-01-06 03:29:23,1
+alh_mad,tropomi,feature,tropomi feature: alh_mad,float64,2026-01-06 03:29:23,1
+alh_range,tropomi,feature,tropomi feature: alh_range,float64,2026-01-06 03:29:23,1
+alh_cv,tropomi,feature,tropomi feature: alh_cv,float64,2026-01-06 03:29:23,1
+alh_skew,tropomi,feature,tropomi feature: alh_skew,float64,2026-01-06 03:29:23,1
+alh_kurt,tropomi,feature,tropomi feature: alh_kurt,float64,2026-01-06 03:29:23,1
+alh_delta_median_r1_r05,tropomi,feature,tropomi feature: alh_delta_median_r1_r05,float64,2026-01-06 03:29:23,1
+alh_delta_median_r2_r1,tropomi,feature,tropomi feature: alh_delta_median_r2_r1,float64,2026-01-06 03:29:23,1
+alh_delta_std_r2_r05,tropomi,feature,tropomi feature: alh_delta_std_r2_r05,float64,2026-01-06 03:29:23,1
+ch4_median,tropomi,feature,tropomi feature: ch4_median,float64,2026-01-06 03:29:23,1
+ch4_mean,tropomi,feature,tropomi feature: ch4_mean,float64,2026-01-06 03:29:23,1
+ch4_std,tropomi,feature,tropomi feature: ch4_std,float64,2026-01-06 03:29:23,1
+ch4_min,tropomi,feature,tropomi feature: ch4_min,float64,2026-01-06 03:29:23,1
+ch4_max,tropomi,feature,tropomi feature: ch4_max,float64,2026-01-06 03:29:23,1
+ch4_p10,tropomi,feature,tropomi feature: ch4_p10,float64,2026-01-06 03:29:23,1
+ch4_p25,tropomi,feature,tropomi feature: ch4_p25,float64,2026-01-06 03:29:23,1
+ch4_p75,tropomi,feature,tropomi feature: ch4_p75,float64,2026-01-06 03:29:23,1
+ch4_p90,tropomi,feature,tropomi feature: ch4_p90,float64,2026-01-06 03:29:23,1
+ch4_iqr,tropomi,feature,tropomi feature: ch4_iqr,float64,2026-01-06 03:29:23,1
+ch4_mad,tropomi,feature,tropomi feature: ch4_mad,float64,2026-01-06 03:29:23,1
+ch4_range,tropomi,feature,tropomi feature: ch4_range,float64,2026-01-06 03:29:23,1
+ch4_cv,tropomi,feature,tropomi feature: ch4_cv,float64,2026-01-06 03:29:23,1
+ch4_skew,tropomi,feature,tropomi feature: ch4_skew,float64,2026-01-06 03:29:23,1
+ch4_kurt,tropomi,feature,tropomi feature: ch4_kurt,float64,2026-01-06 03:29:23,1
+ch4_delta_median_r1_r05,tropomi,feature,tropomi feature: ch4_delta_median_r1_r05,float64,2026-01-06 03:29:23,1
+ch4_delta_median_r2_r1,tropomi,feature,tropomi feature: ch4_delta_median_r2_r1,float64,2026-01-06 03:29:23,1
+ch4_delta_std_r2_r05,tropomi,feature,tropomi feature: ch4_delta_std_r2_r05,float64,2026-01-06 03:29:23,1
+cloud_median,tropomi,feature,tropomi feature: cloud_median,float64,2026-01-06 03:29:23,1
+cloud_mean,tropomi,feature,tropomi feature: cloud_mean,float64,2026-01-06 03:29:23,1
+cloud_std,tropomi,feature,tropomi feature: cloud_std,float64,2026-01-06 03:29:23,1
+cloud_min,tropomi,feature,tropomi feature: cloud_min,float64,2026-01-06 03:29:23,1
+cloud_max,tropomi,feature,tropomi feature: cloud_max,float64,2026-01-06 03:29:23,1
+cloud_p10,tropomi,feature,tropomi feature: cloud_p10,float64,2026-01-06 03:29:23,1
+cloud_p25,tropomi,feature,tropomi feature: cloud_p25,float64,2026-01-06 03:29:23,1
+cloud_p75,tropomi,feature,tropomi feature: cloud_p75,float64,2026-01-06 03:29:23,1
+cloud_p90,tropomi,feature,tropomi feature: cloud_p90,float64,2026-01-06 03:29:23,1
+cloud_iqr,tropomi,feature,tropomi feature: cloud_iqr,float64,2026-01-06 03:29:23,1
+cloud_mad,tropomi,feature,tropomi feature: cloud_mad,float64,2026-01-06 03:29:23,1
+cloud_range,tropomi,feature,tropomi feature: cloud_range,float64,2026-01-06 03:29:23,1
+cloud_cv,tropomi,feature,tropomi feature: cloud_cv,float64,2026-01-06 03:29:23,1
+cloud_skew,tropomi,feature,tropomi feature: cloud_skew,float64,2026-01-06 03:29:23,1
+cloud_kurt,tropomi,feature,tropomi feature: cloud_kurt,float64,2026-01-06 03:29:23,1
+cloud_delta_median_r1_r05,tropomi,feature,tropomi feature: cloud_delta_median_r1_r05,float64,2026-01-06 03:29:23,1
+cloud_delta_median_r2_r1,tropomi,feature,tropomi feature: cloud_delta_median_r2_r1,float64,2026-01-06 03:29:23,1
+cloud_delta_std_r2_r05,tropomi,feature,tropomi feature: cloud_delta_std_r2_r05,float64,2026-01-06 03:29:23,1
+o3_median,tropomi,feature,tropomi feature: o3_median,float64,2026-01-06 03:29:23,1
+o3_mean,tropomi,feature,tropomi feature: o3_mean,float64,2026-01-06 03:29:23,1
+o3_std,tropomi,feature,tropomi feature: o3_std,float64,2026-01-06 03:29:23,1
+o3_min,tropomi,feature,tropomi feature: o3_min,float64,2026-01-06 03:29:23,1
+o3_max,tropomi,feature,tropomi feature: o3_max,float64,2026-01-06 03:29:23,1
+o3_p10,tropomi,feature,tropomi feature: o3_p10,float64,2026-01-06 03:29:23,1
+o3_p25,tropomi,feature,tropomi feature: o3_p25,float64,2026-01-06 03:29:23,1
+o3_p75,tropomi,feature,tropomi feature: o3_p75,float64,2026-01-06 03:29:23,1
+o3_p90,tropomi,feature,tropomi feature: o3_p90,float64,2026-01-06 03:29:23,1
+o3_iqr,tropomi,feature,tropomi feature: o3_iqr,float64,2026-01-06 03:29:23,1
+o3_mad,tropomi,feature,tropomi feature: o3_mad,float64,2026-01-06 03:29:23,1
+o3_range,tropomi,feature,tropomi feature: o3_range,float64,2026-01-06 03:29:23,1
+o3_cv,tropomi,feature,tropomi feature: o3_cv,float64,2026-01-06 03:29:23,1
+o3_skew,tropomi,feature,tropomi feature: o3_skew,float64,2026-01-06 03:29:23,1
+o3_kurt,tropomi,feature,tropomi feature: o3_kurt,float64,2026-01-06 03:29:23,1
+o3_delta_median_r1_r05,tropomi,feature,tropomi feature: o3_delta_median_r1_r05,float64,2026-01-06 03:29:23,1
+o3_delta_median_r2_r1,tropomi,feature,tropomi feature: o3_delta_median_r2_r1,float64,2026-01-06 03:29:23,1
+o3_delta_std_r2_r05,tropomi,feature,tropomi feature: o3_delta_std_r2_r05,float64,2026-01-06 03:29:23,1
+nh3_median,tropomi,feature,tropomi feature: nh3_median,float64,2026-01-06 03:29:23,1
+nh3_mean,tropomi,feature,tropomi feature: nh3_mean,float64,2026-01-06 03:29:23,1
+nh3_std,tropomi,feature,tropomi feature: nh3_std,float64,2026-01-06 03:29:23,1
+nh3_min,tropomi,feature,tropomi feature: nh3_min,float64,2026-01-06 03:29:23,1
+nh3_max,tropomi,feature,tropomi feature: nh3_max,float64,2026-01-06 03:29:23,1
+nh3_p10,tropomi,feature,tropomi feature: nh3_p10,float64,2026-01-06 03:29:23,1
+nh3_p25,tropomi,feature,tropomi feature: nh3_p25,float64,2026-01-06 03:29:23,1
+nh3_p75,tropomi,feature,tropomi feature: nh3_p75,float64,2026-01-06 03:29:23,1
+nh3_p90,tropomi,feature,tropomi feature: nh3_p90,float64,2026-01-06 03:29:23,1
+nh3_iqr,tropomi,feature,tropomi feature: nh3_iqr,float64,2026-01-06 03:29:23,1
+nh3_mad,tropomi,feature,tropomi feature: nh3_mad,float64,2026-01-06 03:29:23,1
+nh3_range,tropomi,feature,tropomi feature: nh3_range,float64,2026-01-06 03:29:23,1
+nh3_cv,tropomi,feature,tropomi feature: nh3_cv,float64,2026-01-06 03:29:23,1
+nh3_skew,tropomi,feature,tropomi feature: nh3_skew,float64,2026-01-06 03:29:23,1
+nh3_kurt,tropomi,feature,tropomi feature: nh3_kurt,float64,2026-01-06 03:29:23,1
+nh3_delta_median_r1_r05,tropomi,feature,tropomi feature: nh3_delta_median_r1_r05,float64,2026-01-06 03:29:23,1
+nh3_delta_median_r2_r1,tropomi,feature,tropomi feature: nh3_delta_median_r2_r1,float64,2026-01-06 03:29:23,1
+nh3_delta_std_r2_r05,tropomi,feature,tropomi feature: nh3_delta_std_r2_r05,float64,2026-01-06 03:29:23,1
+no2_n_pixels,tropomi,metadata,tropomi metadata: no2_n_pixels,int64,2026-01-06 03:29:23,0
+no2_radius_km_used,tropomi,metadata,tropomi metadata: no2_radius_km_used,float64,2026-01-06 03:29:23,0
+no2_window_size_used,tropomi,metadata,tropomi metadata: no2_window_size_used,int64,2026-01-06 03:29:23,0
+no2_window_coverage,tropomi,metadata,tropomi metadata: no2_window_coverage,float64,2026-01-06 03:29:23,0
+no2_scale_factor,tropomi,metadata,tropomi metadata: no2_scale_factor,float64,2026-01-06 03:29:23,0
+no2_add_offset,tropomi,metadata,tropomi metadata: no2_add_offset,float64,2026-01-06 03:29:23,0
+no2_qa_available,tropomi,metadata,tropomi metadata: no2_qa_available,int64,2026-01-06 03:29:23,0
+no2_qa_threshold,tropomi,metadata,tropomi metadata: no2_qa_threshold,float64,2026-01-06 03:29:23,0
+no2_qa_pass_fraction,tropomi,metadata,tropomi metadata: no2_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+no2_invalid_reason,tropomi,metadata,tropomi metadata: no2_invalid_reason,object,2026-01-06 03:29:23,0
+no2_file_available,tropomi,metadata,tropomi metadata: no2_file_available,int64,2026-01-06 03:29:23,0
+no2_file_used,tropomi,metadata,tropomi metadata: no2_file_used,object,2026-01-06 03:29:23,0
+no2_median_r05,tropomi,metadata,tropomi metadata: no2_median_r05,float64,2026-01-06 03:29:23,0
+no2_std_r05,tropomi,metadata,tropomi metadata: no2_std_r05,float64,2026-01-06 03:29:23,0
+no2_n_pixels_r05,tropomi,metadata,tropomi metadata: no2_n_pixels_r05,float64,2026-01-06 03:29:23,0
+no2_window_coverage_r05,tropomi,metadata,tropomi metadata: no2_window_coverage_r05,float64,2026-01-06 03:29:23,0
+no2_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: no2_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+no2_invalid_reason_r05,tropomi,metadata,tropomi metadata: no2_invalid_reason_r05,float64,2026-01-06 03:29:23,0
+no2_median_r1,tropomi,metadata,tropomi metadata: no2_median_r1,float64,2026-01-06 03:29:23,0
+no2_std_r1,tropomi,metadata,tropomi metadata: no2_std_r1,float64,2026-01-06 03:29:23,0
+no2_n_pixels_r1,tropomi,metadata,tropomi metadata: no2_n_pixels_r1,float64,2026-01-06 03:29:23,0
+no2_window_coverage_r1,tropomi,metadata,tropomi metadata: no2_window_coverage_r1,float64,2026-01-06 03:29:23,0
+no2_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: no2_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+no2_invalid_reason_r1,tropomi,metadata,tropomi metadata: no2_invalid_reason_r1,float64,2026-01-06 03:29:23,0
+no2_median_r2,tropomi,metadata,tropomi metadata: no2_median_r2,float64,2026-01-06 03:29:23,0
+no2_std_r2,tropomi,metadata,tropomi metadata: no2_std_r2,float64,2026-01-06 03:29:23,0
+no2_n_pixels_r2,tropomi,metadata,tropomi metadata: no2_n_pixels_r2,float64,2026-01-06 03:29:23,0
+no2_window_coverage_r2,tropomi,metadata,tropomi metadata: no2_window_coverage_r2,float64,2026-01-06 03:29:23,0
+no2_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: no2_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+no2_invalid_reason_r2,tropomi,metadata,tropomi metadata: no2_invalid_reason_r2,float64,2026-01-06 03:29:23,0
+so2_n_pixels,tropomi,metadata,tropomi metadata: so2_n_pixels,int64,2026-01-06 03:29:23,0
+so2_radius_km_used,tropomi,metadata,tropomi metadata: so2_radius_km_used,float64,2026-01-06 03:29:23,0
+so2_window_size_used,tropomi,metadata,tropomi metadata: so2_window_size_used,int64,2026-01-06 03:29:23,0
+so2_window_coverage,tropomi,metadata,tropomi metadata: so2_window_coverage,float64,2026-01-06 03:29:23,0
+so2_scale_factor,tropomi,metadata,tropomi metadata: so2_scale_factor,float64,2026-01-06 03:29:23,0
+so2_add_offset,tropomi,metadata,tropomi metadata: so2_add_offset,float64,2026-01-06 03:29:23,0
+so2_qa_available,tropomi,metadata,tropomi metadata: so2_qa_available,int64,2026-01-06 03:29:23,0
+so2_qa_threshold,tropomi,metadata,tropomi metadata: so2_qa_threshold,float64,2026-01-06 03:29:23,0
+so2_qa_pass_fraction,tropomi,metadata,tropomi metadata: so2_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+so2_invalid_reason,tropomi,metadata,tropomi metadata: so2_invalid_reason,object,2026-01-06 03:29:23,0
+so2_file_available,tropomi,metadata,tropomi metadata: so2_file_available,int64,2026-01-06 03:29:23,0
+so2_file_used,tropomi,metadata,tropomi metadata: so2_file_used,object,2026-01-06 03:29:23,0
+so2_median_r05,tropomi,metadata,tropomi metadata: so2_median_r05,float64,2026-01-06 03:29:23,0
+so2_std_r05,tropomi,metadata,tropomi metadata: so2_std_r05,float64,2026-01-06 03:29:23,0
+so2_n_pixels_r05,tropomi,metadata,tropomi metadata: so2_n_pixels_r05,float64,2026-01-06 03:29:23,0
+so2_window_coverage_r05,tropomi,metadata,tropomi metadata: so2_window_coverage_r05,float64,2026-01-06 03:29:23,0
+so2_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: so2_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+so2_invalid_reason_r05,tropomi,metadata,tropomi metadata: so2_invalid_reason_r05,float64,2026-01-06 03:29:23,0
+so2_median_r1,tropomi,metadata,tropomi metadata: so2_median_r1,float64,2026-01-06 03:29:23,0
+so2_std_r1,tropomi,metadata,tropomi metadata: so2_std_r1,float64,2026-01-06 03:29:23,0
+so2_n_pixels_r1,tropomi,metadata,tropomi metadata: so2_n_pixels_r1,float64,2026-01-06 03:29:23,0
+so2_window_coverage_r1,tropomi,metadata,tropomi metadata: so2_window_coverage_r1,float64,2026-01-06 03:29:23,0
+so2_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: so2_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+so2_invalid_reason_r1,tropomi,metadata,tropomi metadata: so2_invalid_reason_r1,float64,2026-01-06 03:29:23,0
+so2_median_r2,tropomi,metadata,tropomi metadata: so2_median_r2,float64,2026-01-06 03:29:23,0
+so2_std_r2,tropomi,metadata,tropomi metadata: so2_std_r2,float64,2026-01-06 03:29:23,0
+so2_n_pixels_r2,tropomi,metadata,tropomi metadata: so2_n_pixels_r2,float64,2026-01-06 03:29:23,0
+so2_window_coverage_r2,tropomi,metadata,tropomi metadata: so2_window_coverage_r2,float64,2026-01-06 03:29:23,0
+so2_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: so2_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+so2_invalid_reason_r2,tropomi,metadata,tropomi metadata: so2_invalid_reason_r2,float64,2026-01-06 03:29:23,0
+co_n_pixels,tropomi,metadata,tropomi metadata: co_n_pixels,int64,2026-01-06 03:29:23,0
+co_radius_km_used,tropomi,metadata,tropomi metadata: co_radius_km_used,float64,2026-01-06 03:29:23,0
+co_window_size_used,tropomi,metadata,tropomi metadata: co_window_size_used,int64,2026-01-06 03:29:23,0
+co_window_coverage,tropomi,metadata,tropomi metadata: co_window_coverage,float64,2026-01-06 03:29:23,0
+co_scale_factor,tropomi,metadata,tropomi metadata: co_scale_factor,float64,2026-01-06 03:29:23,0
+co_add_offset,tropomi,metadata,tropomi metadata: co_add_offset,float64,2026-01-06 03:29:23,0
+co_qa_available,tropomi,metadata,tropomi metadata: co_qa_available,int64,2026-01-06 03:29:23,0
+co_qa_threshold,tropomi,metadata,tropomi metadata: co_qa_threshold,float64,2026-01-06 03:29:23,0
+co_qa_pass_fraction,tropomi,metadata,tropomi metadata: co_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+co_invalid_reason,tropomi,metadata,tropomi metadata: co_invalid_reason,object,2026-01-06 03:29:23,0
+co_file_available,tropomi,metadata,tropomi metadata: co_file_available,int64,2026-01-06 03:29:23,0
+co_file_used,tropomi,metadata,tropomi metadata: co_file_used,object,2026-01-06 03:29:23,0
+co_median_r05,tropomi,metadata,tropomi metadata: co_median_r05,float64,2026-01-06 03:29:23,0
+co_std_r05,tropomi,metadata,tropomi metadata: co_std_r05,float64,2026-01-06 03:29:23,0
+co_n_pixels_r05,tropomi,metadata,tropomi metadata: co_n_pixels_r05,float64,2026-01-06 03:29:23,0
+co_window_coverage_r05,tropomi,metadata,tropomi metadata: co_window_coverage_r05,float64,2026-01-06 03:29:23,0
+co_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: co_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+co_invalid_reason_r05,tropomi,metadata,tropomi metadata: co_invalid_reason_r05,float64,2026-01-06 03:29:23,0
+co_median_r1,tropomi,metadata,tropomi metadata: co_median_r1,float64,2026-01-06 03:29:23,0
+co_std_r1,tropomi,metadata,tropomi metadata: co_std_r1,float64,2026-01-06 03:29:23,0
+co_n_pixels_r1,tropomi,metadata,tropomi metadata: co_n_pixels_r1,float64,2026-01-06 03:29:23,0
+co_window_coverage_r1,tropomi,metadata,tropomi metadata: co_window_coverage_r1,float64,2026-01-06 03:29:23,0
+co_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: co_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+co_invalid_reason_r1,tropomi,metadata,tropomi metadata: co_invalid_reason_r1,float64,2026-01-06 03:29:23,0
+co_median_r2,tropomi,metadata,tropomi metadata: co_median_r2,float64,2026-01-06 03:29:23,0
+co_std_r2,tropomi,metadata,tropomi metadata: co_std_r2,float64,2026-01-06 03:29:23,0
+co_n_pixels_r2,tropomi,metadata,tropomi metadata: co_n_pixels_r2,float64,2026-01-06 03:29:23,0
+co_window_coverage_r2,tropomi,metadata,tropomi metadata: co_window_coverage_r2,float64,2026-01-06 03:29:23,0
+co_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: co_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+co_invalid_reason_r2,tropomi,metadata,tropomi metadata: co_invalid_reason_r2,float64,2026-01-06 03:29:23,0
+hcho_n_pixels,tropomi,metadata,tropomi metadata: hcho_n_pixels,int64,2026-01-06 03:29:23,0
+hcho_radius_km_used,tropomi,metadata,tropomi metadata: hcho_radius_km_used,float64,2026-01-06 03:29:23,0
+hcho_window_size_used,tropomi,metadata,tropomi metadata: hcho_window_size_used,int64,2026-01-06 03:29:23,0
+hcho_window_coverage,tropomi,metadata,tropomi metadata: hcho_window_coverage,float64,2026-01-06 03:29:23,0
+hcho_scale_factor,tropomi,metadata,tropomi metadata: hcho_scale_factor,float64,2026-01-06 03:29:23,0
+hcho_add_offset,tropomi,metadata,tropomi metadata: hcho_add_offset,float64,2026-01-06 03:29:23,0
+hcho_qa_available,tropomi,metadata,tropomi metadata: hcho_qa_available,int64,2026-01-06 03:29:23,0
+hcho_qa_threshold,tropomi,metadata,tropomi metadata: hcho_qa_threshold,float64,2026-01-06 03:29:23,0
+hcho_qa_pass_fraction,tropomi,metadata,tropomi metadata: hcho_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+hcho_invalid_reason,tropomi,metadata,tropomi metadata: hcho_invalid_reason,object,2026-01-06 03:29:23,0
+hcho_file_available,tropomi,metadata,tropomi metadata: hcho_file_available,int64,2026-01-06 03:29:23,0
+hcho_file_used,tropomi,metadata,tropomi metadata: hcho_file_used,object,2026-01-06 03:29:23,0
+hcho_median_r05,tropomi,metadata,tropomi metadata: hcho_median_r05,float64,2026-01-06 03:29:23,0
+hcho_std_r05,tropomi,metadata,tropomi metadata: hcho_std_r05,float64,2026-01-06 03:29:23,0
+hcho_n_pixels_r05,tropomi,metadata,tropomi metadata: hcho_n_pixels_r05,float64,2026-01-06 03:29:23,0
+hcho_window_coverage_r05,tropomi,metadata,tropomi metadata: hcho_window_coverage_r05,float64,2026-01-06 03:29:23,0
+hcho_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: hcho_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+hcho_invalid_reason_r05,tropomi,metadata,tropomi metadata: hcho_invalid_reason_r05,float64,2026-01-06 03:29:23,0
+hcho_median_r1,tropomi,metadata,tropomi metadata: hcho_median_r1,float64,2026-01-06 03:29:23,0
+hcho_std_r1,tropomi,metadata,tropomi metadata: hcho_std_r1,float64,2026-01-06 03:29:23,0
+hcho_n_pixels_r1,tropomi,metadata,tropomi metadata: hcho_n_pixels_r1,float64,2026-01-06 03:29:23,0
+hcho_window_coverage_r1,tropomi,metadata,tropomi metadata: hcho_window_coverage_r1,float64,2026-01-06 03:29:23,0
+hcho_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: hcho_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+hcho_invalid_reason_r1,tropomi,metadata,tropomi metadata: hcho_invalid_reason_r1,float64,2026-01-06 03:29:23,0
+hcho_median_r2,tropomi,metadata,tropomi metadata: hcho_median_r2,float64,2026-01-06 03:29:23,0
+hcho_std_r2,tropomi,metadata,tropomi metadata: hcho_std_r2,float64,2026-01-06 03:29:23,0
+hcho_n_pixels_r2,tropomi,metadata,tropomi metadata: hcho_n_pixels_r2,float64,2026-01-06 03:29:23,0
+hcho_window_coverage_r2,tropomi,metadata,tropomi metadata: hcho_window_coverage_r2,float64,2026-01-06 03:29:23,0
+hcho_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: hcho_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+hcho_invalid_reason_r2,tropomi,metadata,tropomi metadata: hcho_invalid_reason_r2,float64,2026-01-06 03:29:23,0
+aai_n_pixels,tropomi,metadata,tropomi metadata: aai_n_pixels,int64,2026-01-06 03:29:23,0
+aai_radius_km_used,tropomi,metadata,tropomi metadata: aai_radius_km_used,float64,2026-01-06 03:29:23,0
+aai_window_size_used,tropomi,metadata,tropomi metadata: aai_window_size_used,int64,2026-01-06 03:29:23,0
+aai_window_coverage,tropomi,metadata,tropomi metadata: aai_window_coverage,float64,2026-01-06 03:29:23,0
+aai_scale_factor,tropomi,metadata,tropomi metadata: aai_scale_factor,float64,2026-01-06 03:29:23,0
+aai_add_offset,tropomi,metadata,tropomi metadata: aai_add_offset,float64,2026-01-06 03:29:23,0
+aai_qa_available,tropomi,metadata,tropomi metadata: aai_qa_available,int64,2026-01-06 03:29:23,0
+aai_qa_threshold,tropomi,metadata,tropomi metadata: aai_qa_threshold,float64,2026-01-06 03:29:23,0
+aai_qa_pass_fraction,tropomi,metadata,tropomi metadata: aai_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+aai_invalid_reason,tropomi,metadata,tropomi metadata: aai_invalid_reason,object,2026-01-06 03:29:23,0
+aai_file_available,tropomi,metadata,tropomi metadata: aai_file_available,int64,2026-01-06 03:29:23,0
+aai_file_used,tropomi,metadata,tropomi metadata: aai_file_used,object,2026-01-06 03:29:23,0
+aai_median_r05,tropomi,metadata,tropomi metadata: aai_median_r05,float64,2026-01-06 03:29:23,0
+aai_std_r05,tropomi,metadata,tropomi metadata: aai_std_r05,float64,2026-01-06 03:29:23,0
+aai_n_pixels_r05,tropomi,metadata,tropomi metadata: aai_n_pixels_r05,float64,2026-01-06 03:29:23,0
+aai_window_coverage_r05,tropomi,metadata,tropomi metadata: aai_window_coverage_r05,float64,2026-01-06 03:29:23,0
+aai_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: aai_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+aai_invalid_reason_r05,tropomi,metadata,tropomi metadata: aai_invalid_reason_r05,float64,2026-01-06 03:29:23,0
+aai_median_r1,tropomi,metadata,tropomi metadata: aai_median_r1,float64,2026-01-06 03:29:23,0
+aai_std_r1,tropomi,metadata,tropomi metadata: aai_std_r1,float64,2026-01-06 03:29:23,0
+aai_n_pixels_r1,tropomi,metadata,tropomi metadata: aai_n_pixels_r1,float64,2026-01-06 03:29:23,0
+aai_window_coverage_r1,tropomi,metadata,tropomi metadata: aai_window_coverage_r1,float64,2026-01-06 03:29:23,0
+aai_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: aai_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+aai_invalid_reason_r1,tropomi,metadata,tropomi metadata: aai_invalid_reason_r1,float64,2026-01-06 03:29:23,0
+aai_median_r2,tropomi,metadata,tropomi metadata: aai_median_r2,float64,2026-01-06 03:29:23,0
+aai_std_r2,tropomi,metadata,tropomi metadata: aai_std_r2,float64,2026-01-06 03:29:23,0
+aai_n_pixels_r2,tropomi,metadata,tropomi metadata: aai_n_pixels_r2,float64,2026-01-06 03:29:23,0
+aai_window_coverage_r2,tropomi,metadata,tropomi metadata: aai_window_coverage_r2,float64,2026-01-06 03:29:23,0
+aai_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: aai_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+aai_invalid_reason_r2,tropomi,metadata,tropomi metadata: aai_invalid_reason_r2,float64,2026-01-06 03:29:23,0
+alh_n_pixels,tropomi,metadata,tropomi metadata: alh_n_pixels,int64,2026-01-06 03:29:23,0
+alh_radius_km_used,tropomi,metadata,tropomi metadata: alh_radius_km_used,float64,2026-01-06 03:29:23,0
+alh_window_size_used,tropomi,metadata,tropomi metadata: alh_window_size_used,int64,2026-01-06 03:29:23,0
+alh_window_coverage,tropomi,metadata,tropomi metadata: alh_window_coverage,float64,2026-01-06 03:29:23,0
+alh_scale_factor,tropomi,metadata,tropomi metadata: alh_scale_factor,float64,2026-01-06 03:29:23,0
+alh_add_offset,tropomi,metadata,tropomi metadata: alh_add_offset,float64,2026-01-06 03:29:23,0
+alh_qa_available,tropomi,metadata,tropomi metadata: alh_qa_available,int64,2026-01-06 03:29:23,0
+alh_qa_threshold,tropomi,metadata,tropomi metadata: alh_qa_threshold,float64,2026-01-06 03:29:23,0
+alh_qa_pass_fraction,tropomi,metadata,tropomi metadata: alh_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+alh_invalid_reason,tropomi,metadata,tropomi metadata: alh_invalid_reason,object,2026-01-06 03:29:23,0
+alh_file_available,tropomi,metadata,tropomi metadata: alh_file_available,int64,2026-01-06 03:29:23,0
+alh_file_used,tropomi,metadata,tropomi metadata: alh_file_used,object,2026-01-06 03:29:23,0
+alh_median_r05,tropomi,metadata,tropomi metadata: alh_median_r05,float64,2026-01-06 03:29:23,0
+alh_std_r05,tropomi,metadata,tropomi metadata: alh_std_r05,float64,2026-01-06 03:29:23,0
+alh_n_pixels_r05,tropomi,metadata,tropomi metadata: alh_n_pixels_r05,float64,2026-01-06 03:29:23,0
+alh_window_coverage_r05,tropomi,metadata,tropomi metadata: alh_window_coverage_r05,float64,2026-01-06 03:29:23,0
+alh_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: alh_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+alh_invalid_reason_r05,tropomi,metadata,tropomi metadata: alh_invalid_reason_r05,object,2026-01-06 03:29:23,0
+alh_median_r1,tropomi,metadata,tropomi metadata: alh_median_r1,float64,2026-01-06 03:29:23,0
+alh_std_r1,tropomi,metadata,tropomi metadata: alh_std_r1,float64,2026-01-06 03:29:23,0
+alh_n_pixels_r1,tropomi,metadata,tropomi metadata: alh_n_pixels_r1,float64,2026-01-06 03:29:23,0
+alh_window_coverage_r1,tropomi,metadata,tropomi metadata: alh_window_coverage_r1,float64,2026-01-06 03:29:23,0
+alh_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: alh_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+alh_invalid_reason_r1,tropomi,metadata,tropomi metadata: alh_invalid_reason_r1,object,2026-01-06 03:29:23,0
+alh_median_r2,tropomi,metadata,tropomi metadata: alh_median_r2,float64,2026-01-06 03:29:23,0
+alh_std_r2,tropomi,metadata,tropomi metadata: alh_std_r2,float64,2026-01-06 03:29:23,0
+alh_n_pixels_r2,tropomi,metadata,tropomi metadata: alh_n_pixels_r2,float64,2026-01-06 03:29:23,0
+alh_window_coverage_r2,tropomi,metadata,tropomi metadata: alh_window_coverage_r2,float64,2026-01-06 03:29:23,0
+alh_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: alh_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+alh_invalid_reason_r2,tropomi,metadata,tropomi metadata: alh_invalid_reason_r2,object,2026-01-06 03:29:23,0
+ch4_n_pixels,tropomi,metadata,tropomi metadata: ch4_n_pixels,int64,2026-01-06 03:29:23,0
+ch4_radius_km_used,tropomi,metadata,tropomi metadata: ch4_radius_km_used,float64,2026-01-06 03:29:23,0
+ch4_window_size_used,tropomi,metadata,tropomi metadata: ch4_window_size_used,int64,2026-01-06 03:29:23,0
+ch4_window_coverage,tropomi,metadata,tropomi metadata: ch4_window_coverage,float64,2026-01-06 03:29:23,0
+ch4_scale_factor,tropomi,metadata,tropomi metadata: ch4_scale_factor,float64,2026-01-06 03:29:23,0
+ch4_add_offset,tropomi,metadata,tropomi metadata: ch4_add_offset,float64,2026-01-06 03:29:23,0
+ch4_qa_available,tropomi,metadata,tropomi metadata: ch4_qa_available,int64,2026-01-06 03:29:23,0
+ch4_qa_threshold,tropomi,metadata,tropomi metadata: ch4_qa_threshold,float64,2026-01-06 03:29:23,0
+ch4_qa_pass_fraction,tropomi,metadata,tropomi metadata: ch4_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+ch4_invalid_reason,tropomi,metadata,tropomi metadata: ch4_invalid_reason,object,2026-01-06 03:29:23,0
+ch4_file_available,tropomi,metadata,tropomi metadata: ch4_file_available,int64,2026-01-06 03:29:23,0
+ch4_file_used,tropomi,metadata,tropomi metadata: ch4_file_used,object,2026-01-06 03:29:23,0
+ch4_median_r05,tropomi,metadata,tropomi metadata: ch4_median_r05,float64,2026-01-06 03:29:23,0
+ch4_std_r05,tropomi,metadata,tropomi metadata: ch4_std_r05,float64,2026-01-06 03:29:23,0
+ch4_n_pixels_r05,tropomi,metadata,tropomi metadata: ch4_n_pixels_r05,float64,2026-01-06 03:29:23,0
+ch4_window_coverage_r05,tropomi,metadata,tropomi metadata: ch4_window_coverage_r05,float64,2026-01-06 03:29:23,0
+ch4_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: ch4_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+ch4_invalid_reason_r05,tropomi,metadata,tropomi metadata: ch4_invalid_reason_r05,object,2026-01-06 03:29:23,0
+ch4_median_r1,tropomi,metadata,tropomi metadata: ch4_median_r1,float64,2026-01-06 03:29:23,0
+ch4_std_r1,tropomi,metadata,tropomi metadata: ch4_std_r1,float64,2026-01-06 03:29:23,0
+ch4_n_pixels_r1,tropomi,metadata,tropomi metadata: ch4_n_pixels_r1,float64,2026-01-06 03:29:23,0
+ch4_window_coverage_r1,tropomi,metadata,tropomi metadata: ch4_window_coverage_r1,float64,2026-01-06 03:29:23,0
+ch4_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: ch4_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+ch4_invalid_reason_r1,tropomi,metadata,tropomi metadata: ch4_invalid_reason_r1,object,2026-01-06 03:29:23,0
+ch4_median_r2,tropomi,metadata,tropomi metadata: ch4_median_r2,float64,2026-01-06 03:29:23,0
+ch4_std_r2,tropomi,metadata,tropomi metadata: ch4_std_r2,float64,2026-01-06 03:29:23,0
+ch4_n_pixels_r2,tropomi,metadata,tropomi metadata: ch4_n_pixels_r2,float64,2026-01-06 03:29:23,0
+ch4_window_coverage_r2,tropomi,metadata,tropomi metadata: ch4_window_coverage_r2,float64,2026-01-06 03:29:23,0
+ch4_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: ch4_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+ch4_invalid_reason_r2,tropomi,metadata,tropomi metadata: ch4_invalid_reason_r2,object,2026-01-06 03:29:23,0
+cloud_n_pixels,tropomi,metadata,tropomi metadata: cloud_n_pixels,int64,2026-01-06 03:29:23,0
+cloud_radius_km_used,tropomi,metadata,tropomi metadata: cloud_radius_km_used,float64,2026-01-06 03:29:23,0
+cloud_window_size_used,tropomi,metadata,tropomi metadata: cloud_window_size_used,int64,2026-01-06 03:29:23,0
+cloud_window_coverage,tropomi,metadata,tropomi metadata: cloud_window_coverage,float64,2026-01-06 03:29:23,0
+cloud_scale_factor,tropomi,metadata,tropomi metadata: cloud_scale_factor,float64,2026-01-06 03:29:23,0
+cloud_add_offset,tropomi,metadata,tropomi metadata: cloud_add_offset,float64,2026-01-06 03:29:23,0
+cloud_qa_available,tropomi,metadata,tropomi metadata: cloud_qa_available,int64,2026-01-06 03:29:23,0
+cloud_qa_threshold,tropomi,metadata,tropomi metadata: cloud_qa_threshold,float64,2026-01-06 03:29:23,0
+cloud_qa_pass_fraction,tropomi,metadata,tropomi metadata: cloud_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+cloud_invalid_reason,tropomi,metadata,tropomi metadata: cloud_invalid_reason,object,2026-01-06 03:29:23,0
+cloud_file_available,tropomi,metadata,tropomi metadata: cloud_file_available,int64,2026-01-06 03:29:23,0
+cloud_file_used,tropomi,metadata,tropomi metadata: cloud_file_used,object,2026-01-06 03:29:23,0
+cloud_median_r05,tropomi,metadata,tropomi metadata: cloud_median_r05,float64,2026-01-06 03:29:23,0
+cloud_std_r05,tropomi,metadata,tropomi metadata: cloud_std_r05,float64,2026-01-06 03:29:23,0
+cloud_n_pixels_r05,tropomi,metadata,tropomi metadata: cloud_n_pixels_r05,float64,2026-01-06 03:29:23,0
+cloud_window_coverage_r05,tropomi,metadata,tropomi metadata: cloud_window_coverage_r05,float64,2026-01-06 03:29:23,0
+cloud_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: cloud_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+cloud_invalid_reason_r05,tropomi,metadata,tropomi metadata: cloud_invalid_reason_r05,object,2026-01-06 03:29:23,0
+cloud_median_r1,tropomi,metadata,tropomi metadata: cloud_median_r1,float64,2026-01-06 03:29:23,0
+cloud_std_r1,tropomi,metadata,tropomi metadata: cloud_std_r1,float64,2026-01-06 03:29:23,0
+cloud_n_pixels_r1,tropomi,metadata,tropomi metadata: cloud_n_pixels_r1,float64,2026-01-06 03:29:23,0
+cloud_window_coverage_r1,tropomi,metadata,tropomi metadata: cloud_window_coverage_r1,float64,2026-01-06 03:29:23,0
+cloud_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: cloud_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+cloud_invalid_reason_r1,tropomi,metadata,tropomi metadata: cloud_invalid_reason_r1,object,2026-01-06 03:29:23,0
+cloud_median_r2,tropomi,metadata,tropomi metadata: cloud_median_r2,float64,2026-01-06 03:29:23,0
+cloud_std_r2,tropomi,metadata,tropomi metadata: cloud_std_r2,float64,2026-01-06 03:29:23,0
+cloud_n_pixels_r2,tropomi,metadata,tropomi metadata: cloud_n_pixels_r2,float64,2026-01-06 03:29:23,0
+cloud_window_coverage_r2,tropomi,metadata,tropomi metadata: cloud_window_coverage_r2,float64,2026-01-06 03:29:23,0
+cloud_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: cloud_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+cloud_invalid_reason_r2,tropomi,metadata,tropomi metadata: cloud_invalid_reason_r2,object,2026-01-06 03:29:23,0
+o3_n_pixels,tropomi,metadata,tropomi metadata: o3_n_pixels,int64,2026-01-06 03:29:23,0
+o3_radius_km_used,tropomi,metadata,tropomi metadata: o3_radius_km_used,float64,2026-01-06 03:29:23,0
+o3_window_size_used,tropomi,metadata,tropomi metadata: o3_window_size_used,int64,2026-01-06 03:29:23,0
+o3_window_coverage,tropomi,metadata,tropomi metadata: o3_window_coverage,float64,2026-01-06 03:29:23,0
+o3_scale_factor,tropomi,metadata,tropomi metadata: o3_scale_factor,float64,2026-01-06 03:29:23,0
+o3_add_offset,tropomi,metadata,tropomi metadata: o3_add_offset,float64,2026-01-06 03:29:23,0
+o3_qa_available,tropomi,metadata,tropomi metadata: o3_qa_available,int64,2026-01-06 03:29:23,0
+o3_qa_threshold,tropomi,metadata,tropomi metadata: o3_qa_threshold,float64,2026-01-06 03:29:23,0
+o3_qa_pass_fraction,tropomi,metadata,tropomi metadata: o3_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+o3_invalid_reason,tropomi,metadata,tropomi metadata: o3_invalid_reason,object,2026-01-06 03:29:23,0
+o3_file_available,tropomi,metadata,tropomi metadata: o3_file_available,int64,2026-01-06 03:29:23,0
+o3_file_used,tropomi,metadata,tropomi metadata: o3_file_used,object,2026-01-06 03:29:23,0
+o3_median_r05,tropomi,metadata,tropomi metadata: o3_median_r05,float64,2026-01-06 03:29:23,0
+o3_std_r05,tropomi,metadata,tropomi metadata: o3_std_r05,float64,2026-01-06 03:29:23,0
+o3_n_pixels_r05,tropomi,metadata,tropomi metadata: o3_n_pixels_r05,float64,2026-01-06 03:29:23,0
+o3_window_coverage_r05,tropomi,metadata,tropomi metadata: o3_window_coverage_r05,float64,2026-01-06 03:29:23,0
+o3_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: o3_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+o3_invalid_reason_r05,tropomi,metadata,tropomi metadata: o3_invalid_reason_r05,object,2026-01-06 03:29:23,0
+o3_median_r1,tropomi,metadata,tropomi metadata: o3_median_r1,float64,2026-01-06 03:29:23,0
+o3_std_r1,tropomi,metadata,tropomi metadata: o3_std_r1,float64,2026-01-06 03:29:23,0
+o3_n_pixels_r1,tropomi,metadata,tropomi metadata: o3_n_pixels_r1,float64,2026-01-06 03:29:23,0
+o3_window_coverage_r1,tropomi,metadata,tropomi metadata: o3_window_coverage_r1,float64,2026-01-06 03:29:23,0
+o3_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: o3_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+o3_invalid_reason_r1,tropomi,metadata,tropomi metadata: o3_invalid_reason_r1,object,2026-01-06 03:29:23,0
+o3_median_r2,tropomi,metadata,tropomi metadata: o3_median_r2,float64,2026-01-06 03:29:23,0
+o3_std_r2,tropomi,metadata,tropomi metadata: o3_std_r2,float64,2026-01-06 03:29:23,0
+o3_n_pixels_r2,tropomi,metadata,tropomi metadata: o3_n_pixels_r2,float64,2026-01-06 03:29:23,0
+o3_window_coverage_r2,tropomi,metadata,tropomi metadata: o3_window_coverage_r2,float64,2026-01-06 03:29:23,0
+o3_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: o3_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+o3_invalid_reason_r2,tropomi,metadata,tropomi metadata: o3_invalid_reason_r2,object,2026-01-06 03:29:23,0
+nh3_n_pixels,tropomi,metadata,tropomi metadata: nh3_n_pixels,int64,2026-01-06 03:29:23,0
+nh3_radius_km_used,tropomi,metadata,tropomi metadata: nh3_radius_km_used,float64,2026-01-06 03:29:23,0
+nh3_window_size_used,tropomi,metadata,tropomi metadata: nh3_window_size_used,int64,2026-01-06 03:29:23,0
+nh3_window_coverage,tropomi,metadata,tropomi metadata: nh3_window_coverage,float64,2026-01-06 03:29:23,0
+nh3_scale_factor,tropomi,metadata,tropomi metadata: nh3_scale_factor,float64,2026-01-06 03:29:23,0
+nh3_add_offset,tropomi,metadata,tropomi metadata: nh3_add_offset,float64,2026-01-06 03:29:23,0
+nh3_qa_available,tropomi,metadata,tropomi metadata: nh3_qa_available,int64,2026-01-06 03:29:23,0
+nh3_qa_threshold,tropomi,metadata,tropomi metadata: nh3_qa_threshold,float64,2026-01-06 03:29:23,0
+nh3_qa_pass_fraction,tropomi,metadata,tropomi metadata: nh3_qa_pass_fraction,float64,2026-01-06 03:29:23,0
+nh3_invalid_reason,tropomi,metadata,tropomi metadata: nh3_invalid_reason,object,2026-01-06 03:29:23,0
+nh3_file_available,tropomi,metadata,tropomi metadata: nh3_file_available,int64,2026-01-06 03:29:23,0
+nh3_file_used,tropomi,metadata,tropomi metadata: nh3_file_used,object,2026-01-06 03:29:23,0
+nh3_median_r05,tropomi,metadata,tropomi metadata: nh3_median_r05,float64,2026-01-06 03:29:23,0
+nh3_std_r05,tropomi,metadata,tropomi metadata: nh3_std_r05,float64,2026-01-06 03:29:23,0
+nh3_n_pixels_r05,tropomi,metadata,tropomi metadata: nh3_n_pixels_r05,float64,2026-01-06 03:29:23,0
+nh3_window_coverage_r05,tropomi,metadata,tropomi metadata: nh3_window_coverage_r05,float64,2026-01-06 03:29:23,0
+nh3_qa_pass_fraction_r05,tropomi,metadata,tropomi metadata: nh3_qa_pass_fraction_r05,float64,2026-01-06 03:29:23,0
+nh3_invalid_reason_r05,tropomi,metadata,tropomi metadata: nh3_invalid_reason_r05,float64,2026-01-06 03:29:23,0
+nh3_median_r1,tropomi,metadata,tropomi metadata: nh3_median_r1,float64,2026-01-06 03:29:23,0
+nh3_std_r1,tropomi,metadata,tropomi metadata: nh3_std_r1,float64,2026-01-06 03:29:23,0
+nh3_n_pixels_r1,tropomi,metadata,tropomi metadata: nh3_n_pixels_r1,float64,2026-01-06 03:29:23,0
+nh3_window_coverage_r1,tropomi,metadata,tropomi metadata: nh3_window_coverage_r1,float64,2026-01-06 03:29:23,0
+nh3_qa_pass_fraction_r1,tropomi,metadata,tropomi metadata: nh3_qa_pass_fraction_r1,float64,2026-01-06 03:29:23,0
+nh3_invalid_reason_r1,tropomi,metadata,tropomi metadata: nh3_invalid_reason_r1,float64,2026-01-06 03:29:23,0
+nh3_median_r2,tropomi,metadata,tropomi metadata: nh3_median_r2,float64,2026-01-06 03:29:23,0
+nh3_std_r2,tropomi,metadata,tropomi metadata: nh3_std_r2,float64,2026-01-06 03:29:23,0
+nh3_n_pixels_r2,tropomi,metadata,tropomi metadata: nh3_n_pixels_r2,float64,2026-01-06 03:29:23,0
+nh3_window_coverage_r2,tropomi,metadata,tropomi metadata: nh3_window_coverage_r2,float64,2026-01-06 03:29:23,0
+nh3_qa_pass_fraction_r2,tropomi,metadata,tropomi metadata: nh3_qa_pass_fraction_r2,float64,2026-01-06 03:29:23,0
+nh3_invalid_reason_r2,tropomi,metadata,tropomi metadata: nh3_invalid_reason_r2,float64,2026-01-06 03:29:23,0
+viirs_file_available,viirs_cmg,metadata,viirs_cmg metadata: viirs_file_available,float64,2026-01-06 03:30:21,0
+viirs_file_used,viirs_cmg,metadata,viirs_cmg metadata: viirs_file_used,float64,2026-01-06 03:30:21,0
+aod_fusion_computed,aod_fusion,metadata,aod_fusion metadata: aod_fusion_computed,float64,2026-01-06 03:30:33,0

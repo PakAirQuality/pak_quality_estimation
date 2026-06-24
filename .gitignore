@@ -45,9 +45,16 @@ PIPFILE.lock
 *.shx
 *.prj
 
-# Exception: the published daily PM2.5 gridded prediction product (small; archived on Zenodo)
+# Exceptions: published artifacts archived on Zenodo (small, non-sensitive)
+# Daily PM2.5 gridded prediction product
 !data/gridded_predictions_2024_2025/
 !data/gridded_predictions_2024_2025/*.tif
+# Anonymised held-out-2025 validation table
+!validation/
+!validation/*.csv
+# Tabular feature registry (predictor metadata; no PII)
+!training/data/
+!training/data/features_registry.csv
 
 # Video files
 *.mp4
